@@ -1,0 +1,66 @@
+import random
+
+class Operator:
+    def __init__(self, operator_id, name, talking_charge, message_cost, discount_rate, network_gb):
+        self.operator_id = operator_id
+        self.name = name
+        self.talking_charge = talking_charge
+        self.message_cost = message_cost
+        self.discount_rate = discount_rate
+        self.network_gb = network_gb
+class Customer:
+    def __init__(self, customer_id, name, work, operator, balance, bill_limit):
+        self.customer_id = customer_id
+        self.name = name
+        self.work = work
+        self.operator = operator
+        self.balance = balance
+        self.bill_limit = bill_limit
+        self.bill = None
+
+    def calculate_talking_cost(self, minutes):
+        talking_charge = minutes * self.operator.talking_charge
+        if self.work == 'retired' or self.work == 'student':
+            talking_charge *= (1 - self.operator.discount_rate)
+        return talking_charge
+
+    def calculate_message_cost(self, messages):
+        total_message_cost = messages * self.operator.message_cost
+        if self.work == 'retired' or self.work == 'student':
+            total_message_cost *= 1 - self.operator.discount_rate 
+        return total_message_cost
+
+    def calculate_internet_cost(self, mb_usage):
+        if self.work == 'retired' or self.work == 'student':
+            mb_usage *= 1-self.operator.discount_rate
+        return mb_usage * self.operator.network_gb
+
+    def generate_bill(self, minutes, messages, mb_usage):
+        total_cost = self.calculate_talking_cost(minutes) + self.calculate_message_cost(messages) + self.calculate_internet_cost(mb_usage)
+        total_cost = round(total_cost, 2)
+
+        if self.bill_limit is None or total_cost <= self.bill_limit:
+            self.bill = Bill(self.customer_id, total_cost)
+        else:
+            print("Bill limit exceeded. You need to pay extra.")
+
+class Bill:
+    def __init__(self, customer_id, amount):
+        self.customer_id = customer_id
+        self.amount = amount
+
+
+operator1 = Operator(0, "Operator1", 0.2, 0.05, 0.1, 0.1)
+operator2 = Operator(1, "Operator2", 0.3, 0.06, 0.2, 0.1)
+
+Anton = Customer(0, "Anton", "student", operator1, random.randint(10, 300), random.randint(100, 1000))
+Olexandr = Customer(1, "Olexandr", "programer", operator1, random.randint(10, 300), random.randint(100, 1000))
+Kateryna = Customer(2, "Kateryna", "retired", operator2, random.randint(10, 300), random.randint(100, 1000))
+
+Anton.generate_bill(random.randint(0, 300), random.randint(0, 50), random.randint(0, 50))
+Olexandr.generate_bill(random.randint(0, 300), random.randint(0, 50), random.randint(0, 50))
+Kateryna.generate_bill(random.randint(0, 300), random.randint(0, 50), random.randint(0, 50))
+
+print(f"Anton`s bill amount: ${Anton.bill.amount}")
+print(f"Olexandr`s bill amount: ${Olexandr.bill.amount}")
+print(f"Kateryna`s bill amount: ${Kateryna.bill.amount}")
