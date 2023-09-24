@@ -1,0 +1,60 @@
+{
+  "items":[
+    {
+      "id": 0,
+      "talkingCharge": 0.20,
+      "messageCharge": 0.5,
+      "networkCharge": 1,
+      "discountRate": 0.05,
+      "discountMessageRate": 0.1
+    },
+    {
+      "id": 1,
+      "talkingCharge": 0.24,
+      "messageCharge": 0.45,
+      "networkCharge": 1.1,
+      "discountRate": 0.05,
+      "discountMessageRate": 0.09
+    },
+    {
+      "id": 2,
+      "talkingCharge": 0.19,
+      "messageCharge": 0.3,
+      "networkCharge": 0.9,
+      "discountRate": 0.06,
+      "discountMessageRate": 0.15
+    },
+    {
+      "id": 3,
+      "talkingCharge": 0.21,
+      "messageCharge": 0.4,
+      "networkCharge": 1,
+      "discountRate": 0.08,
+      "discountMessageRate": 0.1
+    },
+    {
+      "id": 4,
+      "talkingCharge": 0.29,
+      "messageCharge": 0.46,
+      "networkCharge": 1.2,
+      "discountRate": 0.04,
+      "discountMessageRate": 0.1
+    },
+    {
+      "id": 5,
+      "talkingCharge": 0.40,
+      "messageCharge": 0.5,
+      "networkCharge": 1,
+      "discountRate": 0.05,
+      "discountMessageRate": 0.1
+    },
+    {
+      "id": 6,
+      "talkingCharge": 0.18,
+      "messageCharge": 0.4,
+      "networkCharge": 1,
+      "discountRate": 0.04,
+      "discountMessageRate": 0.15
+    }
+  ]
+}

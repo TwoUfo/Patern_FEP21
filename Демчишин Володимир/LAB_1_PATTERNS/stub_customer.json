@@ -1,0 +1,64 @@
+{
+  "items": [
+    {
+      "id": 0,
+      "name": "Anton",
+      "age": 18,
+      "bill" : {
+        "limit": 200,
+        "current_debt": 0
+      },
+      "operator_id" : 5
+    },
+    {
+      "id": 1,
+      "name": "Max",
+      "age": 14,
+      "bill": {
+        "limit": 180,
+        "current_debt": 0
+      },
+      "operator_id" : 3
+    },
+    {
+      "id": 2,
+      "name": "Olga",
+      "age": 35,
+      "bill": {
+        "limit": 310,
+        "current_debt": 0
+      },
+      "operator_id" : 2
+    },
+    {
+      "id": 3,
+      "name": "Roman",
+      "age": 30,
+      "bill": {
+        "limit": 100,
+        "current_debt": 0
+      },
+      "operator_id" : 1
+    },
+    {
+      "id": 4,
+      "name": "Nazar",
+      "age": 25,
+      "bill": {
+        "limit": 250,
+        "current_debt": 0
+      },
+      "operator_id" : 0
+    },
+    {
+      "id": 5,
+      "name": "Volodymyr",
+      "age": 85,
+      "bill": {
+        "limit": 300,
+        "current_debt": 0
+      },
+      "operator_id" : 5
+    }
+  ]
+}
