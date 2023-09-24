@@ -1,0 +1,63 @@
+{
+  "Operators":
+  [
+    {"id_": 0,
+      "talkingCharge": 1.6,
+      "messageCost": 1.5,
+      "networkCharge": 1.3,
+      "discountRate": 1
+    },
+    {"id_": 1,
+      "talkingCharge": 1.7,
+      "messageCost": 2,
+      "networkCharge": 1.2,
+      "discountRate": 2
+    }
+  ],
+  "Bills":
+  [
+    {"id_": 0,
+      "limitingAmount": 100,
+      "currentDebt": 320
+    },
+    {"id_": 1,
+      "limitingAmount": 150,
+      "currentDebt": 10
+    },
+    {"id_": 2,
+      "limitingAmount": 90,
+      "currentDebt": 900
+    },
+    {"id_": 3,
+    "limitingAmount": 203,
+    "currentDebt": 1200
+    }
+  ],
+  "Customers":
+  [
+    {"id_": 0,
+      "name": "Oleh",
+      "age": 18,
+      "operators": [],
+      "bills": []
+    },
+    {"id_": 1,
+      "name": "Nazar",
+      "age": 10,
+      "operators": [],
+      "bills": []
+    },
+    {"id_": 2,
+      "name": "Vasyl",
+      "age": 30,
+      "operators": [],
+      "bills": []
+    },
+    {"id_": 3,
+      "name": "Andriy",
+      "age": 80,
+      "operators": [],
+      "bills": []
+    }
+  ]
+}
