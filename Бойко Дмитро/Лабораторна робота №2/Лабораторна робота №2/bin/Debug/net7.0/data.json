@@ -1,0 +1,52 @@
+{
+  "ID": 1,
+  "Fuel": 1000.0,
+  "CurrentPort": {
+    "ID": 1,
+    "Latitude": 52.52,
+    "Longitude": 13.405,
+    "Containers": [],
+    "ShipHistory": [],
+    "CurrentShips": []
+  },
+  "TotalWeightCapacity": 5000,
+  "MaxNumberOfAllContainers": 10,
+  "MaxNumberOfHeavyContainers": 5,
+  "MaxNumberOfRefrigeratedContainers": 3,
+  "MaxNumberOfLiquidContainers": 2,
+  "FuelConsumptionPerKM": 0.2,
+  "Containers": [
+    {
+      "ID": 1,
+      "Weight": 500
+    },
+    {
+      "ID": 2,
+      "Weight": 1000
+    },
+    {
+      "ID": 3,
+      "Weight": 800
+    },
+    {
+      "ID": 4,
+      "Weight": 700
+    }
+  ]
+}
+{
+  "ID": 1,
+  "Latitude": 52.52,
+  "Longitude": 13.405,
+  "Containers": [],
+  "ShipHistory": [],
+  "CurrentShips": []
+}
+{
+  "ID": 2,
+  "Latitude": 48.8566,
+  "Longitude": 2.3522,
+  "Containers": [],
+  "ShipHistory": [],
+  "CurrentShips": []
+}
