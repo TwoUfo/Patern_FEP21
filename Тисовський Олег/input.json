@@ -1,0 +1,133 @@
+[
+  {
+    "latitude": 49.98,
+    "longitude": 24.12,
+    "ships": [
+      {
+        "total_weight_capacity": 80000,
+        "max_number_of_all_containers": 10,
+        "max_number_of_basic_containers": 5,
+        "max_number_of_heavy_containers": 2,
+        "max_number_of_refrigerated_containers": 1,
+        "max_number_of_liquid_containers": 2,
+        "fuel_consumption_per_km": 20,
+        "fuel": 100000
+      },
+      {
+        "total_weight_capacity": 100000,
+        "max_number_of_all_containers": 15,
+        "max_number_of_basic_containers": 7,
+        "max_number_of_heavy_containers": 3,
+        "max_number_of_refrigerated_containers": 3,
+        "max_number_of_liquid_containers": 2,
+        "fuel_consumption_per_km": 30,
+        "fuel": 150000
+      }
+    ],
+    "containers": [
+      {
+        "container_type": "Basic",
+        "weight": 1500
+      },
+      {
+        "container_type": "Heavy",
+        "weight": 3400
+      },
+      {
+        "container_type": "Refrigerated",
+        "weight": 3200
+      },
+      {
+        "container_type": "Liquid",
+        "weight": 4000
+      },
+      {
+        "container_type": "Basic",
+        "weight": 2200
+      },
+      {
+        "container_type": "Heavy",
+        "weight": 4100
+      },
+      {
+        "container_type": "Refrigerated",
+        "weight": 3900
+      },
+      {
+        "container_type": "Liquid",
+        "weight": 3600
+      }
+    ]
+  },
+
+  {
+    "latitude": 81.978,
+    "longitude": 12.65,
+    "ships": [
+      {
+        "total_weight_capacity": 150000,
+        "max_number_of_all_containers": 20,
+        "max_number_of_basic_containers": 8,
+        "max_number_of_heavy_containers": 6,
+        "max_number_of_refrigerated_containers": 3,
+        "max_number_of_liquid_containers": 3,
+        "fuel_consumption_per_km": 40,
+        "fuel": 120000
+      },
+      {
+        "total_weight_capacity": 50000,
+        "max_number_of_all_containers": 10,
+        "max_number_of_basic_containers": 5,
+        "max_number_of_heavy_containers": 3,
+        "max_number_of_refrigerated_containers": 1,
+        "max_number_of_liquid_containers": 1,
+        "fuel_consumption_per_km": 15,
+        "fuel": 20000
+      },
+      {
+        "total_weight_capacity": 200000,
+        "max_number_of_all_containers": 30,
+        "max_number_of_basic_containers": 12,
+        "max_number_of_heavy_containers": 7,
+        "max_number_of_refrigerated_containers": 6,
+        "max_number_of_liquid_containers": 5,
+        "fuel_consumption_per_km": 65,
+        "fuel": 1000
+      }
+    ],
+    "containers": [
+      {
+        "container_type": "Basic",
+        "weight": 1600
+      },
+      {
+        "container_type": "Heavy",
+        "weight": 3700
+      },
+      {
+        "container_type": "Refrigerated",
+        "weight": 3700
+      },
+      {
+        "container_type": "Liquid",
+        "weight": 4050
+      },
+      {
+        "container_type": "Basic",
+        "weight": 2700
+      },
+      {
+        "container_type": "Heavy",
+        "weight": 4100
+      },
+      {
+        "container_type": "Refrigerated",
+        "weight": 3750
+      },
+      {
+        "container_type": "Liquid",
+        "weight": 3150
+      }
+    ]
+  }
+]
