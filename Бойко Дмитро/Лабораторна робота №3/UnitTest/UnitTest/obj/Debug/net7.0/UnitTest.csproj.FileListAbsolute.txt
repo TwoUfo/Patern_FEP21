@@ -1,0 +1,5 @@
+C:\Users\dimab\OneDrive\Рабочий стол\Універ 2 курс\Патерни проектування\UnitTest\UnitTest\obj\Debug\net7.0\UnitTest.csproj.AssemblyReference.cache
+C:\Users\dimab\OneDrive\Рабочий стол\Універ 2 курс\Патерни проектування\UnitTest\UnitTest\obj\Debug\net7.0\UnitTest.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\dimab\OneDrive\Рабочий стол\Універ 2 курс\Патерни проектування\UnitTest\UnitTest\obj\Debug\net7.0\UnitTest.AssemblyInfoInputs.cache
+C:\Users\dimab\OneDrive\Рабочий стол\Універ 2 курс\Патерни проектування\UnitTest\UnitTest\obj\Debug\net7.0\UnitTest.AssemblyInfo.cs
+C:\Users\dimab\OneDrive\Рабочий стол\Універ 2 курс\Патерни проектування\UnitTest\UnitTest\obj\Debug\net7.0\UnitTest.csproj.CoreCompileInputs.cache
