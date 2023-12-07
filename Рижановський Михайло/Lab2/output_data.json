@@ -1,0 +1,635 @@
+[
+    {
+        "Port": {
+            "longitude": -126,
+            "latitude": 18,
+            "basic": [],
+            "heavy": [],
+            "Refrigerated": [],
+            "liquid": [],
+            "current_ships": [
+                {
+                    "type": "Ship",
+                    "id": "42792a9c-85a7-4474-824d-958917f1178f",
+                    "fuel left:": 1408,
+                    "port": "a6baf172-793c-4f03-8a2a-078967fdb051",
+                    "containers": [
+                        {
+                            "type": "BasicContainer",
+                            "container id": "26e16378-44e7-4d24-9b38-a1f4f1a70b43",
+                            "weight": 2469,
+                            "consumption": 6172.5
+                        },
+                        {
+                            "type": "RefrigeratedContainer",
+                            "container id": "ff4d1fd4-66ac-473d-a8d7-264de54492cf",
+                            "weight": 4306,
+                            "consumption": 21530
+                        },
+                        {
+                            "type": "RefrigeratedContainer",
+                            "container id": "92ac5166-b29a-4ab5-b49f-8308266405ca",
+                            "weight": 5988,
+                            "consumption": 29940
+                        },
+                        {
+                            "type": "HeavyContainer",
+                            "container id": "dafa7a1d-abd9-4f6d-9fd0-9747f9f259e2",
+                            "weight": 3377,
+                            "consumption": 10131
+                        },
+                        {
+                            "type": "BasicContainer",
+                            "container id": "743c45c1-bb1b-4683-8fde-53d69e622eaf",
+                            "weight": 2727,
+                            "consumption": 6817.5
+                        },
+                        {
+                            "type": "BasicContainer",
+                            "container id": "b9c2a77e-f37d-44ab-8c82-96df341400aa",
+                            "weight": 2103,
+                            "consumption": 5257.5
+                        },
+                        {
+                            "type": "RefrigeratedContainer",
+                            "container id": "266cb02c-3c50-4e0b-8ab9-5abf16a4edb8",
+                            "weight": 4192,
+                            "consumption": 20960
+                        }
+                    ]
+                },
+                [
+                    {
+                        "type": "Ship",
+                        "id": "42792a9c-85a7-4474-824d-958917f1178f",
+                        "fuel left:": 1408,
+                        "port": "a6baf172-793c-4f03-8a2a-078967fdb051",
+                        "containers": [
+                            {
+                                "type": "BasicContainer",
+                                "container id": "26e16378-44e7-4d24-9b38-a1f4f1a70b43",
+                                "weight": 2469,
+                                "consumption": 6172.5
+                            },
+                            {
+                                "type": "RefrigeratedContainer",
+                                "container id": "ff4d1fd4-66ac-473d-a8d7-264de54492cf",
+                                "weight": 4306,
+                                "consumption": 21530
+                            },
+                            {
+                                "type": "RefrigeratedContainer",
+                                "container id": "92ac5166-b29a-4ab5-b49f-8308266405ca",
+                                "weight": 5988,
+                                "consumption": 29940
+                            },
+                            {
+                                "type": "HeavyContainer",
+                                "container id": "dafa7a1d-abd9-4f6d-9fd0-9747f9f259e2",
+                                "weight": 3377,
+                                "consumption": 10131
+                            },
+                            {
+                                "type": "BasicContainer",
+                                "container id": "743c45c1-bb1b-4683-8fde-53d69e622eaf",
+                                "weight": 2727,
+                                "consumption": 6817.5
+                            },
+                            {
+                                "type": "BasicContainer",
+                                "container id": "b9c2a77e-f37d-44ab-8c82-96df341400aa",
+                                "weight": 2103,
+                                "consumption": 5257.5
+                            },
+                            {
+                                "type": "RefrigeratedContainer",
+                                "container id": "266cb02c-3c50-4e0b-8ab9-5abf16a4edb8",
+                                "weight": 4192,
+                                "consumption": 20960
+                            }
+                        ]
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "Port": {
+            "longitude": 32,
+            "latitude": -33,
+            "basic": [],
+            "heavy": [],
+            "Refrigerated": [],
+            "liquid": [],
+            "current_ships": [
+                {
+                    "type": "Ship",
+                    "id": "42792a9c-85a7-4474-824d-958917f1178f",
+                    "fuel left:": 1408,
+                    "port": "a6baf172-793c-4f03-8a2a-078967fdb051",
+                    "containers": [
+                        {
+                            "type": "BasicContainer",
+                            "container id": "26e16378-44e7-4d24-9b38-a1f4f1a70b43",
+                            "weight": 2469,
+                            "consumption": 6172.5
+                        },
+                        {
+                            "type": "RefrigeratedContainer",
+                            "container id": "ff4d1fd4-66ac-473d-a8d7-264de54492cf",
+                            "weight": 4306,
+                            "consumption": 21530
+                        },
+                        {
+                            "type": "RefrigeratedContainer",
+                            "container id": "92ac5166-b29a-4ab5-b49f-8308266405ca",
+                            "weight": 5988,
+                            "consumption": 29940
+                        },
+                        {
+                            "type": "HeavyContainer",
+                            "container id": "dafa7a1d-abd9-4f6d-9fd0-9747f9f259e2",
+                            "weight": 3377,
+                            "consumption": 10131
+                        },
+                        {
+                            "type": "BasicContainer",
+                            "container id": "743c45c1-bb1b-4683-8fde-53d69e622eaf",
+                            "weight": 2727,
+                            "consumption": 6817.5
+                        },
+                        {
+                            "type": "BasicContainer",
+                            "container id": "b9c2a77e-f37d-44ab-8c82-96df341400aa",
+                            "weight": 2103,
+                            "consumption": 5257.5
+                        },
+                        {
+                            "type": "RefrigeratedContainer",
+                            "container id": "266cb02c-3c50-4e0b-8ab9-5abf16a4edb8",
+                            "weight": 4192,
+                            "consumption": 20960
+                        }
+                    ]
+                },
+                [
+                    {
+                        "type": "Ship",
+                        "id": "42792a9c-85a7-4474-824d-958917f1178f",
+                        "fuel left:": 1408,
+                        "port": "a6baf172-793c-4f03-8a2a-078967fdb051",
+                        "containers": [
+                            {
+                                "type": "BasicContainer",
+                                "container id": "26e16378-44e7-4d24-9b38-a1f4f1a70b43",
+                                "weight": 2469,
+                                "consumption": 6172.5
+                            },
+                            {
+                                "type": "RefrigeratedContainer",
+                                "container id": "ff4d1fd4-66ac-473d-a8d7-264de54492cf",
+                                "weight": 4306,
+                                "consumption": 21530
+                            },
+                            {
+                                "type": "RefrigeratedContainer",
+                                "container id": "92ac5166-b29a-4ab5-b49f-8308266405ca",
+                                "weight": 5988,
+                                "consumption": 29940
+                            },
+                            {
+                                "type": "HeavyContainer",
+                                "container id": "dafa7a1d-abd9-4f6d-9fd0-9747f9f259e2",
+                                "weight": 3377,
+                                "consumption": 10131
+                            },
+                            {
+                                "type": "BasicContainer",
+                                "container id": "743c45c1-bb1b-4683-8fde-53d69e622eaf",
+                                "weight": 2727,
+                                "consumption": 6817.5
+                            },
+                            {
+                                "type": "BasicContainer",
+                                "container id": "b9c2a77e-f37d-44ab-8c82-96df341400aa",
+                                "weight": 2103,
+                                "consumption": 5257.5
+                            },
+                            {
+                                "type": "RefrigeratedContainer",
+                                "container id": "266cb02c-3c50-4e0b-8ab9-5abf16a4edb8",
+                                "weight": 4192,
+                                "consumption": 20960
+                            }
+                        ]
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "Port": {
+            "longitude": 129,
+            "latitude": 5,
+            "basic": [],
+            "heavy": [],
+            "Refrigerated": [],
+            "liquid": [],
+            "current_ships": [
+                {
+                    "type": "Ship",
+                    "id": "42792a9c-85a7-4474-824d-958917f1178f",
+                    "fuel left:": 1408,
+                    "port": "a6baf172-793c-4f03-8a2a-078967fdb051",
+                    "containers": [
+                        {
+                            "type": "BasicContainer",
+                            "container id": "26e16378-44e7-4d24-9b38-a1f4f1a70b43",
+                            "weight": 2469,
+                            "consumption": 6172.5
+                        },
+                        {
+                            "type": "RefrigeratedContainer",
+                            "container id": "ff4d1fd4-66ac-473d-a8d7-264de54492cf",
+                            "weight": 4306,
+                            "consumption": 21530
+                        },
+                        {
+                            "type": "RefrigeratedContainer",
+                            "container id": "92ac5166-b29a-4ab5-b49f-8308266405ca",
+                            "weight": 5988,
+                            "consumption": 29940
+                        },
+                        {
+                            "type": "HeavyContainer",
+                            "container id": "dafa7a1d-abd9-4f6d-9fd0-9747f9f259e2",
+                            "weight": 3377,
+                            "consumption": 10131
+                        },
+                        {
+                            "type": "BasicContainer",
+                            "container id": "743c45c1-bb1b-4683-8fde-53d69e622eaf",
+                            "weight": 2727,
+                            "consumption": 6817.5
+                        },
+                        {
+                            "type": "BasicContainer",
+                            "container id": "b9c2a77e-f37d-44ab-8c82-96df341400aa",
+                            "weight": 2103,
+                            "consumption": 5257.5
+                        },
+                        {
+                            "type": "RefrigeratedContainer",
+                            "container id": "266cb02c-3c50-4e0b-8ab9-5abf16a4edb8",
+                            "weight": 4192,
+                            "consumption": 20960
+                        }
+                    ]
+                },
+                [
+                    {
+                        "type": "Ship",
+                        "id": "42792a9c-85a7-4474-824d-958917f1178f",
+                        "fuel left:": 1408,
+                        "port": "a6baf172-793c-4f03-8a2a-078967fdb051",
+                        "containers": [
+                            {
+                                "type": "BasicContainer",
+                                "container id": "26e16378-44e7-4d24-9b38-a1f4f1a70b43",
+                                "weight": 2469,
+                                "consumption": 6172.5
+                            },
+                            {
+                                "type": "RefrigeratedContainer",
+                                "container id": "ff4d1fd4-66ac-473d-a8d7-264de54492cf",
+                                "weight": 4306,
+                                "consumption": 21530
+                            },
+                            {
+                                "type": "RefrigeratedContainer",
+                                "container id": "92ac5166-b29a-4ab5-b49f-8308266405ca",
+                                "weight": 5988,
+                                "consumption": 29940
+                            },
+                            {
+                                "type": "HeavyContainer",
+                                "container id": "dafa7a1d-abd9-4f6d-9fd0-9747f9f259e2",
+                                "weight": 3377,
+                                "consumption": 10131
+                            },
+                            {
+                                "type": "BasicContainer",
+                                "container id": "743c45c1-bb1b-4683-8fde-53d69e622eaf",
+                                "weight": 2727,
+                                "consumption": 6817.5
+                            },
+                            {
+                                "type": "BasicContainer",
+                                "container id": "b9c2a77e-f37d-44ab-8c82-96df341400aa",
+                                "weight": 2103,
+                                "consumption": 5257.5
+                            },
+                            {
+                                "type": "RefrigeratedContainer",
+                                "container id": "266cb02c-3c50-4e0b-8ab9-5abf16a4edb8",
+                                "weight": 4192,
+                                "consumption": 20960
+                            }
+                        ]
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "Port": {
+            "longitude": 162,
+            "latitude": 83,
+            "basic": [],
+            "heavy": [],
+            "Refrigerated": [],
+            "liquid": [],
+            "current_ships": [
+                {
+                    "type": "Ship",
+                    "id": "42792a9c-85a7-4474-824d-958917f1178f",
+                    "fuel left:": 1408,
+                    "port": "a6baf172-793c-4f03-8a2a-078967fdb051",
+                    "containers": [
+                        {
+                            "type": "BasicContainer",
+                            "container id": "26e16378-44e7-4d24-9b38-a1f4f1a70b43",
+                            "weight": 2469,
+                            "consumption": 6172.5
+                        },
+                        {
+                            "type": "RefrigeratedContainer",
+                            "container id": "ff4d1fd4-66ac-473d-a8d7-264de54492cf",
+                            "weight": 4306,
+                            "consumption": 21530
+                        },
+                        {
+                            "type": "RefrigeratedContainer",
+                            "container id": "92ac5166-b29a-4ab5-b49f-8308266405ca",
+                            "weight": 5988,
+                            "consumption": 29940
+                        },
+                        {
+                            "type": "HeavyContainer",
+                            "container id": "dafa7a1d-abd9-4f6d-9fd0-9747f9f259e2",
+                            "weight": 3377,
+                            "consumption": 10131
+                        },
+                        {
+                            "type": "BasicContainer",
+                            "container id": "743c45c1-bb1b-4683-8fde-53d69e622eaf",
+                            "weight": 2727,
+                            "consumption": 6817.5
+                        },
+                        {
+                            "type": "BasicContainer",
+                            "container id": "b9c2a77e-f37d-44ab-8c82-96df341400aa",
+                            "weight": 2103,
+                            "consumption": 5257.5
+                        },
+                        {
+                            "type": "RefrigeratedContainer",
+                            "container id": "266cb02c-3c50-4e0b-8ab9-5abf16a4edb8",
+                            "weight": 4192,
+                            "consumption": 20960
+                        }
+                    ]
+                },
+                [
+                    {
+                        "type": "Ship",
+                        "id": "42792a9c-85a7-4474-824d-958917f1178f",
+                        "fuel left:": 1408,
+                        "port": "a6baf172-793c-4f03-8a2a-078967fdb051",
+                        "containers": [
+                            {
+                                "type": "BasicContainer",
+                                "container id": "26e16378-44e7-4d24-9b38-a1f4f1a70b43",
+                                "weight": 2469,
+                                "consumption": 6172.5
+                            },
+                            {
+                                "type": "RefrigeratedContainer",
+                                "container id": "ff4d1fd4-66ac-473d-a8d7-264de54492cf",
+                                "weight": 4306,
+                                "consumption": 21530
+                            },
+                            {
+                                "type": "RefrigeratedContainer",
+                                "container id": "92ac5166-b29a-4ab5-b49f-8308266405ca",
+                                "weight": 5988,
+                                "consumption": 29940
+                            },
+                            {
+                                "type": "HeavyContainer",
+                                "container id": "dafa7a1d-abd9-4f6d-9fd0-9747f9f259e2",
+                                "weight": 3377,
+                                "consumption": 10131
+                            },
+                            {
+                                "type": "BasicContainer",
+                                "container id": "743c45c1-bb1b-4683-8fde-53d69e622eaf",
+                                "weight": 2727,
+                                "consumption": 6817.5
+                            },
+                            {
+                                "type": "BasicContainer",
+                                "container id": "b9c2a77e-f37d-44ab-8c82-96df341400aa",
+                                "weight": 2103,
+                                "consumption": 5257.5
+                            },
+                            {
+                                "type": "RefrigeratedContainer",
+                                "container id": "266cb02c-3c50-4e0b-8ab9-5abf16a4edb8",
+                                "weight": 4192,
+                                "consumption": 20960
+                            }
+                        ]
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "Port": {
+            "longitude": -36,
+            "latitude": -87,
+            "basic": [
+                {
+                    "type": "BasicContainer",
+                    "container id": "26e16378-44e7-4d24-9b38-a1f4f1a70b43",
+                    "weight": 2469,
+                    "consumption": 6172.5
+                },
+                {
+                    "type": "BasicContainer",
+                    "container id": "743c45c1-bb1b-4683-8fde-53d69e622eaf",
+                    "weight": 2727,
+                    "consumption": 6817.5
+                },
+                {
+                    "type": "BasicContainer",
+                    "container id": "b9c2a77e-f37d-44ab-8c82-96df341400aa",
+                    "weight": 2103,
+                    "consumption": 5257.5
+                }
+            ],
+            "heavy": [
+                {
+                    "type": "RefrigeratedContainer",
+                    "container id": "ff4d1fd4-66ac-473d-a8d7-264de54492cf",
+                    "weight": 4306,
+                    "consumption": 21530
+                },
+                {
+                    "type": "RefrigeratedContainer",
+                    "container id": "92ac5166-b29a-4ab5-b49f-8308266405ca",
+                    "weight": 5988,
+                    "consumption": 29940
+                },
+                {
+                    "type": "HeavyContainer",
+                    "container id": "dafa7a1d-abd9-4f6d-9fd0-9747f9f259e2",
+                    "weight": 3377,
+                    "consumption": 10131
+                },
+                {
+                    "type": "RefrigeratedContainer",
+                    "container id": "266cb02c-3c50-4e0b-8ab9-5abf16a4edb8",
+                    "weight": 4192,
+                    "consumption": 20960
+                }
+            ],
+            "Refrigerated": [
+                {
+                    "type": "RefrigeratedContainer",
+                    "container id": "ff4d1fd4-66ac-473d-a8d7-264de54492cf",
+                    "weight": 4306,
+                    "consumption": 21530
+                },
+                {
+                    "type": "RefrigeratedContainer",
+                    "container id": "92ac5166-b29a-4ab5-b49f-8308266405ca",
+                    "weight": 5988,
+                    "consumption": 29940
+                },
+                {
+                    "type": "RefrigeratedContainer",
+                    "container id": "266cb02c-3c50-4e0b-8ab9-5abf16a4edb8",
+                    "weight": 4192,
+                    "consumption": 20960
+                }
+            ],
+            "liquid": [],
+            "current_ships": [
+                {
+                    "type": "Ship",
+                    "id": "42792a9c-85a7-4474-824d-958917f1178f",
+                    "fuel left:": 1408,
+                    "port": "a6baf172-793c-4f03-8a2a-078967fdb051",
+                    "containers": [
+                        {
+                            "type": "BasicContainer",
+                            "container id": "26e16378-44e7-4d24-9b38-a1f4f1a70b43",
+                            "weight": 2469,
+                            "consumption": 6172.5
+                        },
+                        {
+                            "type": "RefrigeratedContainer",
+                            "container id": "ff4d1fd4-66ac-473d-a8d7-264de54492cf",
+                            "weight": 4306,
+                            "consumption": 21530
+                        },
+                        {
+                            "type": "RefrigeratedContainer",
+                            "container id": "92ac5166-b29a-4ab5-b49f-8308266405ca",
+                            "weight": 5988,
+                            "consumption": 29940
+                        },
+                        {
+                            "type": "HeavyContainer",
+                            "container id": "dafa7a1d-abd9-4f6d-9fd0-9747f9f259e2",
+                            "weight": 3377,
+                            "consumption": 10131
+                        },
+                        {
+                            "type": "BasicContainer",
+                            "container id": "743c45c1-bb1b-4683-8fde-53d69e622eaf",
+                            "weight": 2727,
+                            "consumption": 6817.5
+                        },
+                        {
+                            "type": "BasicContainer",
+                            "container id": "b9c2a77e-f37d-44ab-8c82-96df341400aa",
+                            "weight": 2103,
+                            "consumption": 5257.5
+                        },
+                        {
+                            "type": "RefrigeratedContainer",
+                            "container id": "266cb02c-3c50-4e0b-8ab9-5abf16a4edb8",
+                            "weight": 4192,
+                            "consumption": 20960
+                        }
+                    ]
+                },
+                [
+                    {
+                        "type": "Ship",
+                        "id": "42792a9c-85a7-4474-824d-958917f1178f",
+                        "fuel left:": 1408,
+                        "port": "a6baf172-793c-4f03-8a2a-078967fdb051",
+                        "containers": [
+                            {
+                                "type": "BasicContainer",
+                                "container id": "26e16378-44e7-4d24-9b38-a1f4f1a70b43",
+                                "weight": 2469,
+                                "consumption": 6172.5
+                            },
+                            {
+                                "type": "RefrigeratedContainer",
+                                "container id": "ff4d1fd4-66ac-473d-a8d7-264de54492cf",
+                                "weight": 4306,
+                                "consumption": 21530
+                            },
+                            {
+                                "type": "RefrigeratedContainer",
+                                "container id": "92ac5166-b29a-4ab5-b49f-8308266405ca",
+                                "weight": 5988,
+                                "consumption": 29940
+                            },
+                            {
+                                "type": "HeavyContainer",
+                                "container id": "dafa7a1d-abd9-4f6d-9fd0-9747f9f259e2",
+                                "weight": 3377,
+                                "consumption": 10131
+                            },
+                            {
+                                "type": "BasicContainer",
+                                "container id": "743c45c1-bb1b-4683-8fde-53d69e622eaf",
+                                "weight": 2727,
+                                "consumption": 6817.5
+                            },
+                            {
+                                "type": "BasicContainer",
+                                "container id": "b9c2a77e-f37d-44ab-8c82-96df341400aa",
+                                "weight": 2103,
+                                "consumption": 5257.5
+                            },
+                            {
+                                "type": "RefrigeratedContainer",
+                                "container id": "266cb02c-3c50-4e0b-8ab9-5abf16a4edb8",
+                                "weight": 4192,
+                                "consumption": 20960
+                            }
+                        ]
+                    }
+                ]
+            ]
+        }
+    }
+]
