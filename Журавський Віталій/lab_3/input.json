@@ -1,0 +1,92 @@
+[
+
+  {
+    "id": 60033868033413119330218857303588341001,
+    "latitude": 49.98,
+    "longitude": 24.12,
+    "ships": [
+
+      {
+        "id" : 201938437463357417336688592230881693321,
+        "totalWeightCapacity": 85000,
+        "maxNumberOfAllContainers": 10,
+        "maxNumberOfHeavyContainers": 5,
+        "maxNumberOfRefrigeratedContainers": 2,
+        "maxNumberOfLiquidContainers": 5,
+        "fuelConsumptionPerKM": 20,
+        "fuel": 100000
+      },
+      {
+        "id" : 126694441109430588976665770764532183115,
+        "totalWeightCapacity": 30000,
+        "maxNumberOfAllContainers": 18,
+        "maxNumberOfHeavyContainers": 4,
+        "maxNumberOfRefrigeratedContainers": 3,
+        "maxNumberOfLiquidContainers": 2,
+        "fuelConsumptionPerKM": 25,
+        "fuel": 150000
+      }
+    ],
+    "containers": [
+      [100, "R", 302970293046744336651790860055028921214],
+      [250, "L", 231916208518835821660721125920041334172],
+      [70, null, 278958112950666823116206454969310808833],
+      [230, null, 270856794232063057322702187375098270003],
+      [260, "R", 16731996465171024430364087896272233244],
+      [300, "L", 273069373521510129585149028725333350483],
+      [170, "R", 160265918763385847221692098267065978514],
+      [120, null, 210842834953713058420518675802937642820]
+    ]
+
+  },
+
+  {
+    "id": 304431638738375240492445912687014715523,
+    "latitude": 81.978,
+    "longitude": 12.65,
+    "ships": [
+      {
+        "id" : 74731541556573234153248572955292183229,
+        "totalWeightCapacity": 90000,
+        "maxNumberOfAllContainers": 20,
+        "maxNumberOfHeavyContainers": 5,
+        "maxNumberOfRefrigeratedContainers": 2,
+        "maxNumberOfLiquidContainers": 5,
+        "fuelConsumptionPerKM": 20,
+        "fuel": 120000
+      },
+      {
+        "id" : 157315361963126573241956059691724403672,
+        "totalWeightCapacity": 150000,
+        "maxNumberOfAllContainers": 25,
+        "maxNumberOfHeavyContainers": 6,
+        "maxNumberOfRefrigeratedContainers": 3,
+        "maxNumberOfLiquidContainers": 4,
+        "fuelConsumptionPerKM": 17,
+        "fuel": 40000
+      },
+      {
+        "id" : 201938437463357417336688592230881693321,
+        "totalWeightCapacity": 68000,
+        "maxNumberOfAllContainers": 20,
+        "maxNumberOfHeavyContainers": 5,
+        "maxNumberOfRefrigeratedContainers": 2,
+        "maxNumberOfLiquidContainers": 5,
+        "fuelConsumptionPerKM": 20,
+        "fuel": 160000
+      }
+    ],
+    "containers": [
+      [170, null, 134093716945098307663522953724072712814],
+      [195, null, 214437040312112218592443582128382673402],
+      [340, "R", 24199977384943414582129095060101943991],
+      [150, "L", 17252903572438685325802821282365201295],
+      [120, null, 385342648373138375937363647962521810],
+      [150, "R", 329663914456697905056660081746967981860],
+      [155, "L", 128590369867194425997584477674739294299],
+      [160, "L", 14277845185810889286085478253173924248]
+    ]
+
+  }
+
+]
