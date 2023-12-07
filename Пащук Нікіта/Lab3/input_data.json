@@ -1,0 +1,169 @@
+{
+  "Containers_data": [
+    {
+      "id": "c97d358a-a129-46e7-9a5f-ef1bebbdb066",
+      "weight": 1000
+    },
+    {
+      "id": "0d25d9d1-fe18-401f-ab7c-6da20f6a34a1",
+      "weight": 2000
+    },
+    {
+      "id": "3fb090b6-c322-4978-a5da-eb699c90d0cf",
+      "weight": 3000
+    },
+    {
+      "id": "e0e21b5a-0807-4094-b24e-327f7e27cbcf",
+      "weight": 4000,
+      "type": "R"
+    },
+    {
+      "id": "a261dbb4-03d4-4482-b974-6fe4d883d696",
+      "weight": 3500,
+      "type": "R"
+    },
+    {
+      "id": "ba49732d-5714-4977-96d4-09bd947e3650",
+      "weight": 4800
+    },
+    {
+      "id": "13ee984b-d2d3-4a9e-9396-d6ffc34f77e2",
+      "weight": 3300,
+      "type": "L"
+    },
+    {
+      "id": "1ad9b683-436e-41f7-bf60-8c0b22e276bb",
+      "weight": 4040
+    },
+    {
+      "id": "295b4fad-da35-4c92-8ddd-73a47be9c8c0",
+      "weight": 1800
+    },
+    {
+      "id": "aa13b9fd-807f-4c7c-be1d-8a4d37d90ee8",
+      "weight": 2080
+    },
+    {
+      "id": "8e5b2ad8-c949-4633-8b83-6b204a7c95ae",
+      "weight": 3940,
+      "type": "R"
+    },
+    {
+      "id": "12bc2f49-5c42-461b-a850-f5bb54c664b7",
+      "weight": 4070,
+      "type": "L"
+    },
+    {
+      "id": "457f14f5-5007-4d16-b1cf-f8ae04127ec7",
+      "weight": 1700
+    },
+    {
+      "id": "1fb282de-db1d-41a7-b0f0-202d91e299c5",
+      "weight": 5200
+    },
+    {
+      "id": "42a1a88d-c137-4bc4-81d8-254f3d5c08e0",
+      "weight": 6400,
+      "type": "R"
+    },
+    {
+      "id": "a62efbe1-8244-49cc-a4fc-88462b902aca",
+      "weight": 3300
+    },
+    {
+      "id": "f38118d1-c92a-4a89-80a8-83d91f9ed4e1",
+      "weight": 6110,
+      "type": "L"
+    },
+    {
+      "id": "c4b58812-2197-4d4f-9228-0890e67c343b",
+      "weight": 3550
+    }
+  ],
+  "Ships_data": [
+    {
+      "id": "7fb61339-aafc-46e6-9084-ac3e527a3ee4",
+      "fuel": 1700,
+      "total_weight_capacity": 18500,
+      "maxNumberOfAllContainers": 4,
+      "maxNumberOfBasicContainers": 1,
+      "maxNumberOfHeavyContainers": 1,
+      "maxNumberOfRefrigeratedContainers": 1,
+      "maxNumberOfLiquidContainers": 1,
+      "fuelConsumptionPerKM": 8
+    },
+    {
+      "id": "4701ad71-d558-4262-9173-ec1fa01a8ab7",
+      "fuel": 2000,
+      "total_weight_capacity": 34000,
+      "maxNumberOfAllContainers": 8,
+      "maxNumberOfBasicContainers": 2,
+      "maxNumberOfHeavyContainers": 2,
+      "maxNumberOfRefrigeratedContainers": 2,
+      "maxNumberOfLiquidContainers": 2,
+      "fuelConsumptionPerKM": 16
+    },
+    {
+      "id": "a6153bc5-e6d0-42af-a4f8-9f6d3c5836cf",
+      "fuel": 2300,
+      "total_weight_capacity": 55000,
+      "maxNumberOfAllContainers": 12,
+      "maxNumberOfBasicContainers": 3,
+      "maxNumberOfHeavyContainers": 3,
+      "maxNumberOfRefrigeratedContainers": 3,
+      "maxNumberOfLiquidContainers": 3,
+      "fuelConsumptionPerKM": 24
+    },
+    {
+      "id": "4929c93a-335b-46c7-ba46-ec8b5cb9c4b0",
+      "fuel": 1700,
+      "total_weight_capacity": 15000,
+      "maxNumberOfAllContainers": 4,
+      "maxNumberOfBasicContainers": 1,
+      "maxNumberOfHeavyContainers": 1,
+      "maxNumberOfRefrigeratedContainers": 1,
+      "maxNumberOfLiquidContainers": 1,
+      "fuelConsumptionPerKM": 8
+    },
+    {
+      "id": "7398287e-8b10-40a0-9e53-8fdf12c87ffc",
+      "fuel": 2000,
+      "total_weight_capacity": 39000,
+      "maxNumberOfAllContainers": 8,
+      "maxNumberOfBasicContainers": 2,
+      "maxNumberOfHeavyContainers": 2,
+      "maxNumberOfRefrigeratedContainers": 2,
+      "maxNumberOfLiquidContainers": 2,
+      "fuelConsumptionPerKM": 16
+    }
+  ],
+  "Ports_data": [
+    {
+      "id": "d6d65342-1984-4e80-b5a6-5b3b35858769",
+      "latitude": 31.18,
+      "longitude": 121.47,
+      "basic_cont": 2,
+      "heavy_cont": 2,
+      "refrigerated_cont": 1,
+      "liquid_cont": 1
+    },
+    {
+      "id": "a255683c-65d0-4c1c-a3fa-d667713f9b26",
+      "latitude": 29.86,
+      "longitude": 121.55,
+      "basic_cont": 2,
+      "heavy_cont": 2,
+      "refrigerated_cont": 1,
+      "liquid_cont": 1
+    },
+    {
+      "latitude": 30.61,
+      "longitude": 121.11,
+      "basic_cont": 2,
+      "heavy_cont": 1,
+      "refrigerated_cont": 2,
+      "liquid_cont": 1,
+      "id": "ef2492e4-9054-420b-944f-c5c4b7d488cb"
+    }
+  ]
+}
