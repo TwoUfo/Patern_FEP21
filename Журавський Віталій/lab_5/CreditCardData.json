@@ -1,0 +1,37 @@
+[
+  {
+    "client": "Ogan Doe",
+    "account_number": "1234567890123456",
+    "credit_limit": 5000,
+    "grace_period": 30,
+    "cvv": "123"
+  },
+  {
+    "client": "Ihor Smith",
+    "account_number": "9876543210987654",
+    "credit_limit": 8000,
+    "grace_period": 45,
+    "cvv": "456"
+  },
+  {
+    "client": "Tom Johnson",
+    "account_number": "5678901234567890",
+    "credit_limit": 3000,
+    "grace_period": 15,
+    "cvv": "789"
+  },
+  {
+    "client": "Oleh Brown",
+    "account_number": "3456789012345678",
+    "credit_limit": 6000,
+    "grace_period": 25,
+    "cvv": "321"
+  },
+  {
+    "client": "John White",
+    "account_number": "7890123456789012",
+    "credit_limit": 7000,
+    "grace_period": 35,
+    "cvv": "654"
+  }
+]

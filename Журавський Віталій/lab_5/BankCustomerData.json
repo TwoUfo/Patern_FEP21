@@ -1,0 +1,27 @@
+[
+  {
+    "name": "Ogan",
+    "age": 27,
+    "curr_position": "Designer"
+  },
+  {
+    "name": "Ihor",
+    "age": 18,
+    "curr_position": "Student"
+  },
+  {
+    "name": "Tom",
+    "age": 67,
+    "curr_position": "Lawyer"
+  },
+  {
+    "name": "Oleh",
+    "age": 52,
+    "curr_position": "Manager"
+  },
+  {
+    "name": "John",
+    "age": 34,
+    "curr_position": "Marketer"
+  }
+]
