@@ -1,0 +1,62 @@
+{
+  "Actions": [
+    {
+      "Type": "create_port",
+      "PortID": 0,
+      "Latitude": 100.00,
+      "Longitude": 200.00,
+      "MaxContainerCapacity": 10
+    },
+    {
+      "Type": "create_port",
+      "PortID": 1,
+      "Latitude": 150.00,
+      "Longitude": 250.00,
+      "MaxContainerCapacity": 10
+    },
+    {
+      "Type": "create_ship",
+      "ShipID": 0,
+      "PortID": 0,
+      "TotalWeightCapacity": 10000,
+      "MaxNumberOfAllContainers": 10,
+      "MaxNumberOfHeavyContainers": 5,
+      "MaxNumberOfRefrigeratedContainers": 2,
+      "MaxNumberOfLiquidContainers": 2,
+      "FuelConsumptionPerKM": 1.5
+    },
+    {
+      "Type": "create_ship",
+      "ShipID": 1,
+      "PortID": 1,
+      "TotalWeightCapacity": 15000,
+      "MaxNumberOfAllContainers": 15,
+      "MaxNumberOfHeavyContainers": 8,
+      "MaxNumberOfRefrigeratedContainers": 3,
+      "MaxNumberOfLiquidContainers": 2,
+      "FuelConsumptionPerKM": 2.0
+    },
+    {
+      "Type": "load_container",
+      "PortID": 0,
+      "ShipID": 0,
+      "ContainerID": 0
+    },
+    {
+      "Type": "unload_container",
+      "PortID": 1,
+      "ShipID": 1,
+      "ContainerID": 1
+    },
+    {
+      "Type": "sail_ship",
+      "ShipID": 0,
+      "DestinationPortID": 1
+    },
+    {
+      "Type": "refuel_ship",
+      "ShipID": 0,
+      "NewFuel": 500.0
+    }
+  ]
+}
