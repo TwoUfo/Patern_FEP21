@@ -1,0 +1,490 @@
+[
+    {
+        "Port": {
+            "id": "349f0da0-7c1c-4654-8db2-f49f11b66754",
+            "longitude": 78,
+            "latitude": 87,
+            "basic": [
+                {
+                    "type": "BasicContainer",
+                    "id": "03b2e662-8b2f-46e6-8ac5-6d2d7ee61cd6",
+                    "weight": 9.730861590822574,
+                    "consumption": 24.327153977056433,
+                    "items": [
+                        {
+                            "type": "SmallItems",
+                            "id": "b37c0907-704c-48cf-a626-2b4523b76495",
+                            "weight": 23,
+                            "count": 20,
+                            "containerID": "03b2e662-8b2f-46e6-8ac5-6d2d7ee61cd6",
+                            "specificAttribute": "very tiny",
+                            "total weight": 460
+                        }
+                    ]
+                },
+                {
+                    "type": "BasicContainer",
+                    "id": "a597951e-f421-4fee-bbcc-28096418ef74",
+                    "weight": 7.007535546091604,
+                    "consumption": 17.51883886522901,
+                    "items": [
+                        {
+                            "type": "SmallItems",
+                            "id": "37f91983-f247-4693-a0f0-2fb95ca65dfb",
+                            "weight": 22,
+                            "count": 40,
+                            "containerID": "a597951e-f421-4fee-bbcc-28096418ef74",
+                            "specificAttribute": "very tiny",
+                            "total weight": 880
+                        }
+                    ]
+                },
+                {
+                    "type": "BasicContainer",
+                    "id": "5d7d9ceb-cbbf-4b94-9e45-56b95b3bba08",
+                    "weight": 6.3223269285888355,
+                    "consumption": 15.80581732147209,
+                    "items": [
+                        {
+                            "type": "SmallItems",
+                            "id": "8248aa1c-df24-4d59-b2a6-dba0a2fadbaf",
+                            "weight": 22,
+                            "count": 6,
+                            "containerID": "5d7d9ceb-cbbf-4b94-9e45-56b95b3bba08",
+                            "specificAttribute": "very tiny",
+                            "total weight": 132
+                        }
+                    ]
+                }
+            ],
+            "heavy": [
+                {
+                    "type": "HeavyContainer",
+                    "id": "9a88d152-47d4-46f4-a6b8-827bbcebc325",
+                    "weight": 5.608777648765388,
+                    "consumption": 16.826332946296162,
+                    "items": [
+                        {
+                            "type": "HeavyItems",
+                            "id": "1263496c-1d21-404b-8a45-a218d621c044",
+                            "weight": 47,
+                            "count": 9,
+                            "containerID": "9a88d152-47d4-46f4-a6b8-827bbcebc325",
+                            "specificAttribute": "huge box",
+                            "total weight": 423
+                        }
+                    ]
+                },
+                {
+                    "type": "HeavyContainer",
+                    "id": "2a5b4a2b-6fb7-48ab-b5f2-1b6a70d8f3d8",
+                    "weight": 7.564359520502496,
+                    "consumption": 22.693078561507487,
+                    "items": [
+                        {
+                            "type": "HeavyItems",
+                            "id": "33a9c6b3-0ac2-4f7d-bc4e-b6caa08c8c06",
+                            "weight": 56,
+                            "count": 35,
+                            "containerID": "2a5b4a2b-6fb7-48ab-b5f2-1b6a70d8f3d8",
+                            "specificAttribute": "huge box",
+                            "total weight": 1960
+                        }
+                    ]
+                },
+                {
+                    "type": "HeavyContainer",
+                    "id": "67b4debc-e175-4ccd-929c-88309121e15a",
+                    "weight": 9.710596606722033,
+                    "consumption": 29.131789820166098,
+                    "items": [
+                        {
+                            "type": "HeavyItems",
+                            "id": "ba148279-a5d4-4bc5-b9bc-19d26abebbca",
+                            "weight": 60,
+                            "count": 41,
+                            "containerID": "67b4debc-e175-4ccd-929c-88309121e15a",
+                            "specificAttribute": "huge box",
+                            "total weight": 2460
+                        }
+                    ]
+                }
+            ],
+            "Refrigerated": [
+                {
+                    "type": "RefrigeratedContainer",
+                    "id": "c7964e77-92d8-4b76-8060-f2ac2d7e5fa8",
+                    "weight": 9.963423244006131,
+                    "consumption": 49.817116220030655,
+                    "items": [
+                        {
+                            "type": "RefrigeratedItem",
+                            "id": "23a08415-a869-473f-8069-0d08b603f44a",
+                            "weight": 39,
+                            "count": 16,
+                            "containerID": "c7964e77-92d8-4b76-8060-f2ac2d7e5fa8",
+                            "specificAttribute": "frezeee",
+                            "total weight": 624
+                        }
+                    ]
+                }
+            ],
+            "liquid": [
+                {
+                    "type": "LiquidContainer",
+                    "id": "42d0201d-0a01-48d2-87f1-c6202eab437d",
+                    "weight": 8.780059901603117,
+                    "consumption": 35.12023960641247,
+                    "items": [
+                        {
+                            "type": "LiquidItems",
+                            "id": "49e5d1bc-683f-45f5-a1c2-4951b7fa9b80",
+                            "weight": 25,
+                            "count": 37,
+                            "containerID": "42d0201d-0a01-48d2-87f1-c6202eab437d",
+                            "specificAttribute": "thats water..?",
+                            "total weight": 925
+                        }
+                    ]
+                },
+                {
+                    "type": "LiquidContainer",
+                    "id": "a0cc16b1-8360-477d-ae86-7bdb8d0a7459",
+                    "weight": 7.3529257081564445,
+                    "consumption": 29.411702832625778,
+                    "items": [
+                        {
+                            "type": "LiquidItems",
+                            "id": "d7c1fd2d-5d74-4a9f-94f2-600db9196275",
+                            "weight": 26,
+                            "count": 4,
+                            "containerID": "a0cc16b1-8360-477d-ae86-7bdb8d0a7459",
+                            "specificAttribute": "thats water..?",
+                            "total weight": 104
+                        }
+                    ]
+                }
+            ],
+            "current_ships": [
+                {
+                    "type": "LightWeightShip",
+                    "id": "ea8af11e-8d45-4e20-aea9-c85365d1064f",
+                    "fuel": 371,
+                    "port": "06f8fc54-16b4-457d-a744-9eb59d74f88d",
+                    "containers": [
+                        {
+                            "type": "BasicContainer",
+                            "id": "00a7e183-7831-468d-8059-8b48737cb265",
+                            "weight": 7.364381630726625,
+                            "consumption": 18.410954076816562,
+                            "items": [
+                                {
+                                    "type": "SmallItems",
+                                    "id": "68f48414-aad4-47af-ab59-56de342a073c",
+                                    "weight": 43,
+                                    "count": 4,
+                                    "containerID": "00a7e183-7831-468d-8059-8b48737cb265",
+                                    "specificAttribute": "very tiny",
+                                    "total weight": 172
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "MediumShip",
+                    "id": "c0121649-329b-4ead-8d49-ca34cd4e185e",
+                    "fuel": 982,
+                    "port": "06f8fc54-16b4-457d-a744-9eb59d74f88d",
+                    "containers": [
+                        {
+                            "type": "HeavyContainer",
+                            "id": "fdc59988-4ac1-4320-a9af-4a2aa655ee0c",
+                            "weight": 9.119616216245245,
+                            "consumption": 27.358848648735734,
+                            "items": [
+                                {
+                                    "type": "HeavyItems",
+                                    "id": "6d811117-5ab4-417b-a2f5-6d44666c20b8",
+                                    "weight": 43,
+                                    "count": 4,
+                                    "containerID": "fdc59988-4ac1-4320-a9af-4a2aa655ee0c",
+                                    "specificAttribute": "huge box",
+                                    "total weight": 172
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "HeavyShip",
+                    "id": "94fe9395-07ee-41bb-a1de-184e5c3b5751",
+                    "fuel": 982,
+                    "port": "06f8fc54-16b4-457d-a744-9eb59d74f88d",
+                    "containers": [
+                        {
+                            "type": "LiquidContainer",
+                            "id": "7ee9e4b8-d150-4865-bca2-05db948cf9f9",
+                            "weight": 9.296929983134598,
+                            "consumption": 37.18771993253839,
+                            "items": [
+                                {
+                                    "type": "LiquidItems",
+                                    "id": "dbb89055-cd6b-4918-bf60-9a286deea38b",
+                                    "weight": 43,
+                                    "count": 8,
+                                    "containerID": "7ee9e4b8-d150-4865-bca2-05db948cf9f9",
+                                    "specificAttribute": "thats water..?",
+                                    "total weight": 344
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    },
+    {
+        "Port": {
+            "id": "349f0da0-7c1c-4654-8db2-f49f11b66754",
+            "longitude": -86,
+            "latitude": -47,
+            "basic": [],
+            "heavy": [
+                {
+                    "type": "HeavyContainer",
+                    "id": "261fd4f8-ffd3-4376-82e4-5a1324852b15",
+                    "weight": 5.802511024710714,
+                    "consumption": 17.407533074132143,
+                    "items": [
+                        {
+                            "type": "HeavyItems",
+                            "id": "8972f658-c036-41e0-a789-efd952cfe43e",
+                            "weight": 42,
+                            "count": 27,
+                            "containerID": "261fd4f8-ffd3-4376-82e4-5a1324852b15",
+                            "specificAttribute": "huge box",
+                            "total weight": 1134
+                        }
+                    ]
+                },
+                {
+                    "type": "HeavyContainer",
+                    "id": "c64f58aa-e6e1-40ff-993a-e9540150d70b",
+                    "weight": 5.256161543943577,
+                    "consumption": 15.76848463183073,
+                    "items": [
+                        {
+                            "type": "HeavyItems",
+                            "id": "9a32659b-c3e8-4e50-bb36-20e461817b69",
+                            "weight": 56,
+                            "count": 2,
+                            "containerID": "c64f58aa-e6e1-40ff-993a-e9540150d70b",
+                            "specificAttribute": "huge box",
+                            "total weight": 112
+                        }
+                    ]
+                },
+                {
+                    "type": "HeavyContainer",
+                    "id": "35cbf96f-644c-4cb2-a456-371f4168c477",
+                    "weight": 6.355187605596009,
+                    "consumption": 19.065562816788027,
+                    "items": [
+                        {
+                            "type": "HeavyItems",
+                            "id": "5f24051f-9766-4eca-86e9-f1d0f0bed733",
+                            "weight": 55,
+                            "count": 30,
+                            "containerID": "35cbf96f-644c-4cb2-a456-371f4168c477",
+                            "specificAttribute": "huge box",
+                            "total weight": 1650
+                        }
+                    ]
+                },
+                {
+                    "type": "HeavyContainer",
+                    "id": "df175b9b-d0c6-4b3f-a116-e63c8373d801",
+                    "weight": 5.595317884296397,
+                    "consumption": 16.78595365288919,
+                    "items": [
+                        {
+                            "type": "HeavyItems",
+                            "id": "b3d22b1a-63e3-45a7-9657-922cb2f2be6e",
+                            "weight": 51,
+                            "count": 43,
+                            "containerID": "df175b9b-d0c6-4b3f-a116-e63c8373d801",
+                            "specificAttribute": "huge box",
+                            "total weight": 2193
+                        }
+                    ]
+                },
+                {
+                    "type": "HeavyContainer",
+                    "id": "aed016a2-49d4-4b1b-86e2-483aad53755b",
+                    "weight": 5.714348044706517,
+                    "consumption": 17.14304413411955,
+                    "items": [
+                        {
+                            "type": "HeavyItems",
+                            "id": "8ff6fb07-63ad-4307-9db6-6975bde7b96e",
+                            "weight": 52,
+                            "count": 27,
+                            "containerID": "aed016a2-49d4-4b1b-86e2-483aad53755b",
+                            "specificAttribute": "huge box",
+                            "total weight": 1404
+                        }
+                    ]
+                },
+                {
+                    "type": "HeavyContainer",
+                    "id": "453d3052-d552-4877-a185-fa87a3b7ae19",
+                    "weight": 8.872826859810178,
+                    "consumption": 26.618480579430535,
+                    "items": [
+                        {
+                            "type": "HeavyItems",
+                            "id": "c4d245d4-83cc-4c86-b2c6-9805cca818a8",
+                            "weight": 54,
+                            "count": 40,
+                            "containerID": "453d3052-d552-4877-a185-fa87a3b7ae19",
+                            "specificAttribute": "huge box",
+                            "total weight": 2160
+                        }
+                    ]
+                },
+                {
+                    "type": "HeavyContainer",
+                    "id": "c92322a6-c5cf-4091-8f4f-bf27ee456c78",
+                    "weight": 9.532016411707609,
+                    "consumption": 28.596049235122827,
+                    "items": [
+                        {
+                            "type": "HeavyItems",
+                            "id": "50aa48b3-e56f-405e-a2c7-1577efff9505",
+                            "weight": 43,
+                            "count": 43,
+                            "containerID": "c92322a6-c5cf-4091-8f4f-bf27ee456c78",
+                            "specificAttribute": "huge box",
+                            "total weight": 1849
+                        }
+                    ]
+                }
+            ],
+            "Refrigerated": [
+                {
+                    "type": "RefrigeratedContainer",
+                    "id": "ad6b0899-e0cb-4927-b155-e5519f796bf8",
+                    "weight": 9.140083443283142,
+                    "consumption": 45.700417216415715,
+                    "items": [
+                        {
+                            "type": "RefrigeratedItem",
+                            "id": "137abe9b-4fc8-4987-ad26-a1efa1b9f381",
+                            "weight": 32,
+                            "count": 34,
+                            "containerID": "ad6b0899-e0cb-4927-b155-e5519f796bf8",
+                            "specificAttribute": "frezeee",
+                            "total weight": 1088
+                        }
+                    ]
+                },
+                {
+                    "type": "RefrigeratedContainer",
+                    "id": "fda7ec44-a592-43fc-a971-050ad81a585f",
+                    "weight": 7.593491269061602,
+                    "consumption": 37.96745634530801,
+                    "items": [
+                        {
+                            "type": "RefrigeratedItem",
+                            "id": "809e17d1-bdc6-4bd1-a98b-d1ee71bcda84",
+                            "weight": 40,
+                            "count": 8,
+                            "containerID": "fda7ec44-a592-43fc-a971-050ad81a585f",
+                            "specificAttribute": "frezeee",
+                            "total weight": 320
+                        }
+                    ]
+                }
+            ],
+            "liquid": [],
+            "current_ships": [
+                {
+                    "type": "LightWeightShip",
+                    "id": "3cd526e4-d0b9-418e-9c69-6569ff680ab0",
+                    "fuel": 371,
+                    "port": "06f8fc54-16b4-457d-a744-9eb59d74f88d",
+                    "containers": [
+                        {
+                            "type": "BasicContainer",
+                            "id": "ca084541-1834-4985-80fc-6716a46ca65b",
+                            "weight": 5.231464594827554,
+                            "consumption": 13.078661487068885,
+                            "items": [
+                                {
+                                    "type": "SmallItems",
+                                    "id": "47b957bd-7b87-444b-9390-868b2bc51fa5",
+                                    "weight": 43,
+                                    "count": 27,
+                                    "containerID": "ca084541-1834-4985-80fc-6716a46ca65b",
+                                    "specificAttribute": "very tiny",
+                                    "total weight": 1161
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "MediumShip",
+                    "id": "663ef7a3-5929-4c2e-bf77-7ce18f5f2793",
+                    "fuel": 888,
+                    "port": "06f8fc54-16b4-457d-a744-9eb59d74f88d",
+                    "containers": [
+                        {
+                            "type": "HeavyContainer",
+                            "id": "9c0e1741-714d-4927-84ec-211b9623241a",
+                            "weight": 7.867301596497024,
+                            "consumption": 23.601904789491073,
+                            "items": [
+                                {
+                                    "type": "HeavyItems",
+                                    "id": "b4a6f9a2-8f64-45ca-bcf6-89ea3f317a09",
+                                    "weight": 43,
+                                    "count": 3,
+                                    "containerID": "9c0e1741-714d-4927-84ec-211b9623241a",
+                                    "specificAttribute": "huge box",
+                                    "total weight": 129
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "HeavyShip",
+                    "id": "3bd7d00d-fb5f-4440-ba68-bac56eaddbe0",
+                    "fuel": 371,
+                    "port": "06f8fc54-16b4-457d-a744-9eb59d74f88d",
+                    "containers": [
+                        {
+                            "type": "RefrigeratedContainer",
+                            "id": "bddd2d9c-1f3f-4714-a5f5-350a8be1c9a1",
+                            "weight": 5.888398817907213,
+                            "consumption": 29.441994089536063,
+                            "items": [
+                                {
+                                    "type": "RefrigeratedItem",
+                                    "id": "e688d4d5-7f28-4ce2-9295-68207c0c9bad",
+                                    "weight": 43,
+                                    "count": 49,
+                                    "containerID": "bddd2d9c-1f3f-4714-a5f5-350a8be1c9a1",
+                                    "specificAttribute": "frezeee",
+                                    "total weight": 2107
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+]
