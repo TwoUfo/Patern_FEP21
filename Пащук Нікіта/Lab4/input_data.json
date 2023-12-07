@@ -1,0 +1,336 @@
+{
+  "Containers_data": [
+    {
+      "weight": 1000,
+      "type": "Basic"
+    },
+    {
+      "weight": 2000,
+      "type": "Basic"
+    },
+    {
+      "weight": 3000,
+      "type": "Basic"
+    },
+    {
+      "weight": 4000,
+      "type": "Refrigerated"
+    },
+    {
+      "weight": 3500,
+      "type": "Refrigerated"
+    },
+    {
+      "weight": 4800,
+      "type": "Heavy"
+    },
+    {
+      "weight": 3300,
+      "type": "Liquid"
+    },
+    {
+      "weight": 4040,
+      "type": "Heavy"
+    },
+    {
+      "weight": 1800,
+      "type": "Basic"
+    },
+    {
+      "weight": 2080,
+      "type": "Basic"
+    },
+    {
+      "weight": 3940,
+      "type": "Refrigerated"
+    },
+    {
+      "weight": 4070,
+      "type": "Liquid"
+    },
+    {
+      "weight": 1700,
+      "type": "Basic"
+    },
+    {
+      "weight": 5200,
+      "type": "Heavy"
+    },
+    {
+      "weight": 6400,
+      "type": "Refrigerated"
+    },
+    {
+      "weight": 3300,
+      "type": "Heavy"
+    },
+    {
+      "weight": 6110,
+      "type": "Liquid"
+    },
+    {
+      "weight": 3550,
+      "type": "Heavy"
+    }
+  ],
+  "Ships_data": [
+    {
+      "fuel": 1700,
+      "total_weight_capacity": 18500,
+      "maxNumberOfAllContainers": 4,
+      "maxNumberOfBasicContainers": 1,
+      "maxNumberOfHeavyContainers": 1,
+      "maxNumberOfRefrigeratedContainers": 1,
+      "maxNumberOfLiquidContainers": 1,
+      "fuelConsumptionPerKM": 8
+    },
+    {
+      "fuel": 2000,
+      "total_weight_capacity": 34000,
+      "maxNumberOfAllContainers": 8,
+      "maxNumberOfBasicContainers": 2,
+      "maxNumberOfHeavyContainers": 2,
+      "maxNumberOfRefrigeratedContainers": 2,
+      "maxNumberOfLiquidContainers": 2,
+      "fuelConsumptionPerKM": 16
+    },
+    {
+      "fuel": 2300,
+      "total_weight_capacity": 55000,
+      "maxNumberOfAllContainers": 12,
+      "maxNumberOfBasicContainers": 3,
+      "maxNumberOfHeavyContainers": 3,
+      "maxNumberOfRefrigeratedContainers": 3,
+      "maxNumberOfLiquidContainers": 3,
+      "fuelConsumptionPerKM": 24
+    },
+    {
+      "fuel": 1700,
+      "total_weight_capacity": 15000,
+      "maxNumberOfAllContainers": 4,
+      "maxNumberOfBasicContainers": 1,
+      "maxNumberOfHeavyContainers": 1,
+      "maxNumberOfRefrigeratedContainers": 1,
+      "maxNumberOfLiquidContainers": 1,
+      "fuelConsumptionPerKM": 8
+    },
+    {
+      "fuel": 2000,
+      "total_weight_capacity": 39000,
+      "maxNumberOfAllContainers": 8,
+      "maxNumberOfBasicContainers": 2,
+      "maxNumberOfHeavyContainers": 2,
+      "maxNumberOfRefrigeratedContainers": 2,
+      "maxNumberOfLiquidContainers": 2,
+      "fuelConsumptionPerKM": 16
+    }
+  ],
+  "Ports_data": [
+    {
+      "latitude": 31.18,
+      "longitude": 121.47,
+      "basic_cont": 2,
+      "heavy_cont": 2,
+      "refrigerated_cont": 1,
+      "liquid_cont": 1
+    },
+    {
+      "latitude": 29.86,
+      "longitude": 121.55,
+      "basic_cont": 2,
+      "heavy_cont": 2,
+      "refrigerated_cont": 1,
+      "liquid_cont": 1
+    },
+    {
+      "latitude": 30.61,
+      "longitude": 121.11,
+      "basic_cont": 2,
+      "heavy_cont": 1,
+      "refrigerated_cont": 2,
+      "liquid_cont": 1
+    }
+  ],
+  "Items_data": [
+    {
+      "weight": 440,
+      "count": 4,
+      "type": "Refrigerated"
+    },
+    {
+      "weight": 420,
+      "count": 2,
+      "type": "Heavy"
+    },
+    {
+      "weight": 520,
+      "count": 3,
+      "type": "Liquid"
+    },
+    {
+      "weight": 600,
+      "count": 1,
+      "type": "Heavy"
+    },
+    {
+      "weight": 200,
+      "count": 3,
+      "type": "Small"
+    },
+    {
+      "weight": 160,
+      "count": 4,
+      "type": "Small"
+    },
+    {
+      "weight": 360,
+      "count": 2,
+      "type": "Heavy"
+    },
+    {
+      "weight": 440,
+      "count": 5,
+      "type": "Heavy"
+    },
+    {
+      "weight": 320,
+      "count": 2,
+      "type": "Refrigerated"
+    },
+    {
+      "weight": 80,
+      "count": 6,
+      "type": "Small"
+    },
+    {
+      "weight": 360,
+      "count": 5,
+      "type": "Heavy"
+    },
+    {
+      "weight": 400,
+      "count": 3,
+      "type": "Liquid"
+    },
+    {
+      "weight": 440,
+      "count": 2,
+      "type": "Refrigerated"
+    },
+    {
+      "weight": 180,
+      "count": 2,
+      "type": "Small"
+    },
+    {
+      "weight": 340,
+      "count": 6,
+      "type": "Liquid"
+    },
+    {
+      "weight": 80,
+      "count": 5,
+      "type": "Small"
+    },
+    {
+      "weight": 280,
+      "count": 3,
+      "type": "Small"
+    },
+    {
+      "weight": 260,
+      "count": 1,
+      "type": "Small"
+    },
+    {
+      "weight": 330,
+      "count": 5,
+      "type": "Liquid"
+    },
+    {
+      "weight": 220,
+      "count": 5,
+      "type": "Small"
+    },
+    {
+      "weight": 440,
+      "count": 2,
+      "type": "Heavy"
+    },
+    {
+      "weight": 500,
+      "count": 2,
+      "type": "Liquid"
+    },
+    {
+      "weight": 120,
+      "count": 3,
+      "type": "Small"
+    },
+    {
+      "weight": 600,
+      "count": 3,
+      "type": "Liquid"
+    },
+    {
+      "weight": 520,
+      "count": 6,
+      "type": "Liquid"
+    },
+    {
+      "weight": 180,
+      "count": 2,
+      "type": "Small"
+    },
+    {
+      "weight": 20,
+      "count": 6,
+      "type": "Small"
+    },
+    {
+      "weight": 20,
+      "count": 1,
+      "type": "Small"
+    },
+    {
+      "weight": 120,
+      "count": 1,
+      "type": "Small"
+    },
+    {
+      "weight": 180,
+      "count": 5,
+      "type": "Small"
+    },
+    {
+      "weight": 520,
+      "count": 3,
+      "type": "Heavy"
+    },
+    {
+      "weight": 440,
+      "count": 6,
+      "type": "Refrigerated"
+    },
+    {
+      "weight": 600,
+      "count": 4,
+      "type": "Heavy"
+    },
+    {
+      "weight": 310,
+      "count": 3,
+      "type": "Liquid"
+    },
+    {
+      "weight": 420,
+      "count": 4,
+      "type": "Heavy"
+    },
+    {
+      "weight": 320,
+      "count": 3,
+      "type": "Refrigerated"
+    }
+  ]
+}

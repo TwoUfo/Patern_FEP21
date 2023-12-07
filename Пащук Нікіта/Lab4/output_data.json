@@ -1,0 +1,156 @@
+{
+  "Port ID: b5f9d135-41e8-45f0-be64-f6ef331cb887 and coords: (31.18, 121.47)": {
+    "Containers": {
+      "Basic": [
+        "ab3fb87c-9c02-4ebf-a54f-dd261ff2139f",
+        "8b0718a3-850d-4c72-adeb-aa183f19a6df",
+        "c29b58f7-bdcc-4c64-ba2d-4a7f19222795"
+      ],
+      "Heavy": [
+        "c48caa61-cd36-4724-b713-b49508fb92f4"
+      ],
+      "Refrigerated": [
+        "d121f574-ef42-4b3b-8117-5fb726e9f3db"
+      ],
+      "Liquid": [
+        "5dd23c7f-df58-462e-ba2c-f41cb41764b2"
+      ]
+    },
+    "Ships": {
+      "d3fc2712-2b50-48d7-808d-9825256f1f26": "1700.0",
+      "936cc6f2-1a75-4081-87e9-e3f93c295a0e": "1700.0"
+    },
+    "Ship Containers": {
+      "d3fc2712-2b50-48d7-808d-9825256f1f26": [],
+      "936cc6f2-1a75-4081-87e9-e3f93c295a0e": []
+    },
+    "Container Items": {
+      "ab3fb87c-9c02-4ebf-a54f-dd261ff2139f": [
+        "e6ab2a75-39a3-4165-9452-b713f4f733d0",
+        "f1f4a5b6-f9b3-425b-bef3-e752e93d7f8b"
+      ],
+      "d121f574-ef42-4b3b-8117-5fb726e9f3db": [
+        "bcb9f5a3-dfeb-4b93-bb32-235bd8932695",
+        "d6d0746a-574a-41fe-ae54-fac0ef66345e"
+      ],
+      "5dd23c7f-df58-462e-ba2c-f41cb41764b2": [
+        "1d3a4e1f-a717-4d33-b5c9-1135abd8e127",
+        "cd5f93cd-665c-4f2f-b368-e647959281c0"
+      ],
+      "8b0718a3-850d-4c72-adeb-aa183f19a6df": [
+        "e6ab2a75-39a3-4165-9452-b713f4f733d0",
+        "f1f4a5b6-f9b3-425b-bef3-e752e93d7f8b"
+      ],
+      "c29b58f7-bdcc-4c64-ba2d-4a7f19222795": [
+        "e6ab2a75-39a3-4165-9452-b713f4f733d0",
+        "f1f4a5b6-f9b3-425b-bef3-e752e93d7f8b"
+      ],
+      "c48caa61-cd36-4724-b713-b49508fb92f4": [
+        "c6e3144c-4381-4fed-83d9-983123cb2799",
+        "4766829d-bad9-4747-b59e-ccae9b65127f"
+      ]
+    }
+  },
+  "Port ID: 0afc1143-5a4e-43c5-96ad-892cd6349d93 and coords: (29.86, 121.55)": {
+    "Containers": {
+      "Basic": [
+        "8d2450b7-c677-4e57-ae70-40361214a999"
+      ],
+      "Heavy": [
+        "83c157ba-f105-4dda-b765-90277f260340",
+        "69d288e6-8d90-4d9a-ad49-e10d914e5438"
+      ],
+      "Refrigerated": [
+        "fe1bbf81-cb53-437b-ac91-8683e414c722",
+        "8fa70588-8c52-42cc-af83-a808645aa182"
+      ],
+      "Liquid": [
+        "bf047e55-2e8e-4166-a40d-fdbc6cd00c7b"
+      ]
+    },
+    "Ships": {
+      "5375aa67-82ba-437d-9990-c87e63c350f6": "2000.0",
+      "696597fc-7a5d-49ba-8002-2d6b92f2b35f": "2000.0"
+    },
+    "Ship Containers": {
+      "5375aa67-82ba-437d-9990-c87e63c350f6": [],
+      "696597fc-7a5d-49ba-8002-2d6b92f2b35f": []
+    },
+    "Container Items": {
+      "8d2450b7-c677-4e57-ae70-40361214a999": [
+        "e6ab2a75-39a3-4165-9452-b713f4f733d0",
+        "f1f4a5b6-f9b3-425b-bef3-e752e93d7f8b"
+      ],
+      "fe1bbf81-cb53-437b-ac91-8683e414c722": [
+        "bcb9f5a3-dfeb-4b93-bb32-235bd8932695",
+        "d6d0746a-574a-41fe-ae54-fac0ef66345e"
+      ],
+      "83c157ba-f105-4dda-b765-90277f260340": [
+        "c6e3144c-4381-4fed-83d9-983123cb2799",
+        "4766829d-bad9-4747-b59e-ccae9b65127f"
+      ],
+      "8fa70588-8c52-42cc-af83-a808645aa182": [
+        "bcb9f5a3-dfeb-4b93-bb32-235bd8932695",
+        "d6d0746a-574a-41fe-ae54-fac0ef66345e"
+      ],
+      "69d288e6-8d90-4d9a-ad49-e10d914e5438": [
+        "c6e3144c-4381-4fed-83d9-983123cb2799",
+        "4766829d-bad9-4747-b59e-ccae9b65127f"
+      ],
+      "bf047e55-2e8e-4166-a40d-fdbc6cd00c7b": [
+        "1d3a4e1f-a717-4d33-b5c9-1135abd8e127",
+        "cd5f93cd-665c-4f2f-b368-e647959281c0"
+      ]
+    }
+  },
+  "Port ID: 500a7605-7bef-44ed-9bfa-cdbe99f90954 and coords: (30.61, 121.11)": {
+    "Containers": {
+      "Basic": [
+        "5df4e343-a606-407e-adb6-83abc0f2422b",
+        "c553e19e-2940-4eb6-bebf-f0d9eb3c7ccc"
+      ],
+      "Heavy": [
+        "be404b8f-5352-4e48-a46e-850bf5d297a7",
+        "62b495a1-7229-4070-b1fd-2adf4bde038f"
+      ],
+      "Refrigerated": [
+        "9775a237-2b04-4b36-a3e2-339c7e8a6cb0"
+      ],
+      "Liquid": [
+        "c38d7d95-e1a2-4d8e-a3e1-303fdcd0fb1a"
+      ]
+    },
+    "Ships": {
+      "8929a075-2b32-4d63-b0a7-b08af1d16247": "2300.0"
+    },
+    "Ship Containers": {
+      "8929a075-2b32-4d63-b0a7-b08af1d16247": []
+    },
+    "Container Items": {
+      "5df4e343-a606-407e-adb6-83abc0f2422b": [
+        "e6ab2a75-39a3-4165-9452-b713f4f733d0",
+        "f1f4a5b6-f9b3-425b-bef3-e752e93d7f8b"
+      ],
+      "be404b8f-5352-4e48-a46e-850bf5d297a7": [
+        "c6e3144c-4381-4fed-83d9-983123cb2799",
+        "4766829d-bad9-4747-b59e-ccae9b65127f"
+      ],
+      "c553e19e-2940-4eb6-bebf-f0d9eb3c7ccc": [
+        "e6ab2a75-39a3-4165-9452-b713f4f733d0",
+        "f1f4a5b6-f9b3-425b-bef3-e752e93d7f8b"
+      ],
+      "c38d7d95-e1a2-4d8e-a3e1-303fdcd0fb1a": [
+        "1d3a4e1f-a717-4d33-b5c9-1135abd8e127",
+        "cd5f93cd-665c-4f2f-b368-e647959281c0"
+      ],
+      "9775a237-2b04-4b36-a3e2-339c7e8a6cb0": [
+        "bcb9f5a3-dfeb-4b93-bb32-235bd8932695",
+        "d6d0746a-574a-41fe-ae54-fac0ef66345e"
+      ],
+      "62b495a1-7229-4070-b1fd-2adf4bde038f": [
+        "c6e3144c-4381-4fed-83d9-983123cb2799",
+        "4766829d-bad9-4747-b59e-ccae9b65127f"
+      ]
+    }
+  }
+}
