@@ -1,0 +1,38 @@
+{
+  "operator_data": [{
+    "id":0,
+    "talkingCharge":15,
+    "messageCost":5,
+    "networkCharge":20,
+    "discountRate": 0.2
+    },
+  {
+    "id":1,
+    "talkingCharge":100,
+    "messageCost":50,
+    "networkCharge":200,
+    "discountRate": 0.05
+    },
+ {
+    "id":2,
+    "talkingCharge":10,
+    "messageCost":3,
+    "networkCharge":15,
+    "discountRate": 0.3
+    },
+    {
+    "id":3,
+    "talkingCharge":45,
+    "messageCost":25,
+    "networkCharge":30,
+    "discountRate": 0.15
+    },
+    {
+    "id":4,
+    "talkingCharge":90,
+    "messageCost":2,
+    "networkCharge":99,
+    "discountRate": 0.4
+    }
+  ]
+}

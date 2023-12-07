@@ -1,0 +1,33 @@
+{
+  "persons_data": [{
+    "id":0,
+    "name":"Patrik",
+    "age":10,
+    "operator":2,
+    "bill": 400
+    },
+  {
+    "id":1,
+    "name":"Sponge Bob",
+    "age":10,
+    "operator":3,
+    "bill":200
+    },
+ {
+    "id":2,
+    "name":"Squidward",
+    "age":30,
+    "operator":2,
+    "bill":1000
+    },
+    {
+    "id":3,
+    "name":"Sandy",
+    "age":66,
+    "operator":1,
+    "bill": 800
+    }
+  ]
+}
+
+

@@ -1,0 +1,8 @@
+{
+  "Bill_data": [
+    {"limiting_amount": 400,"current_dept": 0},
+    {"limiting_amount": 200,"current_dept": 0},
+    {"limiting_amount": 1000,"current_dept": 0},
+    {"limiting_amount": 800,"current_dept": 0}
+  ]
+}
