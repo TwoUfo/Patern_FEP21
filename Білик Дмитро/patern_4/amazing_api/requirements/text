@@ -1,0 +1,201 @@
+from sqlalchemy import Column, ForeignKey, String, Float, Integer
+from sqlalchemy.ext.declarative import declarative_base
+from sqlalchemy.orm import relationship
+
+Base = declarative_base()
+
+
+class Container(Base):
+    __tablename__ = "containers"
+
+    id = Column(Integer, primary_key=True, index=True)
+    weight = Column(Float, nullable=False)
+    type = Column(String(80), nullable=False)
+    port_id = Column(Integer, ForeignKey("ports.id"), nullable=True)
+    ship_id = Column(Integer, ForeignKey("ships.id"), nullable=True)
+
+
+class Port(Base):
+    __tablename__ = "ports"
+
+    id = Column(primary_key=True, index=True)
+    title = Column(String(80), nullable=False, unique=True, index=True)
+    longitude = Column(Float, nullable=False)
+    latitude = Column(Float, nullable=False)
+    basic = Column(Integer, nullable=False)
+    heavy = Column(Integer, nullable=False)
+    refrigerated = Column(Integer, nullable=False)
+    liquid = Column(Integer, nullable=False)
+    # ships = relationship("Ship", back_populates="port")
+    # ships = relationship("Ship", back_populates="port", foreign_keys="[Ship.port_id]")
+
+class Ship(Base):
+    __tablename__ = "ships"
+
+    id = Column(primary_key=True, index=True)
+    title = Column(String(80), nullable=True, unique=True, index=True)
+    type = Column(String(30), nullable=False, unique=False, index=True)
+    fuel = Column(Float, nullable=True, unique=False)
+    port_id = Column(Integer, ForeignKey("ports.id"))
+    port_deliver_id = Column(Integer, ForeignKey("ports.id"), nullable=True)
+    total_weight_capacity = Column(Integer, nullable=False, unique=False)
+    max_number_of_all_containers = Column(Integer, nullable=False, unique=False)
+    max_number_of_basic_containers = Column(Integer, nullable=False, unique=False)
+    max_number_of_heavy_containers = Column(Integer, nullable=False, unique=False)
+    max_number_of_refrigerated_containers = Column(Integer, nullable=False, unique=False)
+    max_number_of_liquid_containers = Column(Integer, nullable=False, unique=False)
+    fuel_consumption_per_km = Column(Integer, nullable=False, unique=False)
+    # port = relationship("Port", back_populates="ships", foreign_keys="[Ship.port_id]")
+
+    def __repr__(self):
+        return f'Ship(title={self.title})'
+
+
+
+
+import json
+import random
+
+from app.db.database import get_db
+from app.db.repositories.containers import ContainerRepository
+from app.db.repositories.ports import PortRepository
+from app.db.repositories.ships import ShipRepository
+from app.schemas.port import Port
+from app.schemas.ship import IShip
+from fastapi import APIRouter, Depends, HTTPException
+from sqlalchemy.orm import Session
+from starlette import status
+
+router = APIRouter()
+
+
+@router.post("/", response_model=Port, status_code=status.HTTP_201_CREATED)
+def create_port(port: Port, db: Session = Depends(get_db)):
+    port_crud = PortRepository(db_session=db)
+    db_port = port_crud.get_by_id(port_id=port.id)
+    if db_port:
+        raise HTTPException(
+            status_code=status.HTTP_400_BAD_REQUEST,
+            detail="Port already exists"
+        )
+    db_port = port_crud.create_port(port=port)
+    return db_port
+
+
+@router.get("/", response_model=list[Port], status_code=status.HTTP_200_OK)
+def init_db(db: Session = Depends(get_db)):
+    print("create_db ")
+    port_crud = PortRepository(db_session=db)
+    ship_crud = ShipRepository(db_session=db)
+    container_crud = ContainerRepository(db_session=db)
+
+    with open("input_2.json") as input_file:
+        data = json.load(input_file)
+
+    for port_data in data["ports"]:
+        port_id = port_data["port_id"]
+        title = port_data["title"]
+        basic = port_data["basic"]
+        heavy = port_data["heavy"]
+        refrigerated = port_data["refrigerated"]
+        liquid = port_data["liquid"]
+        latitude = random.uniform(30.0, 32.0)
+        longitude = random.uniform(20.0, 22.0)
+
+        port = Port(
+            id=port_id, title=title, basic=basic, heavy=heavy,
+            refrigerated=refrigerated, liquid=liquid, latitude=latitude,
+            longitude=longitude
+        )
+
+        db_port = port_crud.get_by_id(port_id=port.id)
+        if db_port:
+            print("Port already exists")
+        else:
+            db_port = port_crud.create_port(port=port)
+            print(f"Port created {port}")
+
+        ships = port_data["ships"]
+        for ship_data in ships:
+            ship_id = ship_data["ship_id"]
+            port_deliver_id = ship_data["ports_deliver"]
+            fuel = ship_data["fuel"]
+            totalWeightCapacity = ship_data["totalWeightCapacity"]
+            maxNumberOfAllContainers = ship_data["maxNumberOfAllContainers"]
+            maxNumberOfHeavyContainers = ship_data["maxNumberOfHeavyContainers"]
+            maxNumberOfRefrigeratedContainers = ship_data["maxNumberOfRefrigeratedContainers"]
+            maxNumberOfLiquidContainers = ship_data["maxNumberOfLiquidContainers"]
+            maxNumberOfBasicContainers = ship_data["maxNumberOfBasicContainers"]
+            fuelConsumptionPerKM = ship_data["fuelConsumptionPerKM"]
+            ship_type = ship_data["ship_type"]
+            ship_title = ship_data["title"]
+
+            ship = IShip(
+                type_=ship_type, id=ship_id, port_id=port_id, title=ship_title, fuel=fuel,
+                port_deliver=port_deliver_id, total_weight_capacity=totalWeightCapacity,
+                max_number_of_all_containers=maxNumberOfAllContainers,
+                max_number_of_basic_containers=maxNumberOfBasicContainers,
+                max_number_of_heavy_containers=maxNumberOfHeavyContainers,
+                max_number_of_refrigerated_containers=maxNumberOfRefrigeratedContainers,
+                max_number_of_liquid_containers=maxNumberOfLiquidContainers,
+                fuel_consumption_per_km=fuelConsumptionPerKM
+            )
+
+            db_ship = ship_crud.get_by_id(ship.id)
+            if db_ship:
+                print("Ship already exists")
+            else:
+                db_ship = ship_crud.create_ship(ship=ship)
+                print(f"Ship created {ship}")
+
+        container_id = 1
+        for count in range(0, basic):
+            container = BasicContainer(
+                id=container_id, weight=random.uniform(10.0, 15.0), port_id=port_id, ship_id=-1
+            )
+            db_container = container_crud.get_by_id(container.id)
+            if db_container:
+                print("Container already exists")
+            else:
+                db_container = container_crud.create_container(container=container)
+                print(f"Container created {container}")
+            container_id += 1
+
+        for count in range(0, heavy):
+            container = HeavyContainer(
+                id=container_id, weight=random.uniform(10.0, 20.0), port_id=port_id, ship_id=-1
+            )
+            db_container = container_crud.get_by_id(container.id)
+            if db_container:
+                print("Container already exists")
+            else:
+                db_container = container_crud.create_container(container=container)
+                print(f"Container created {container}")
+            container_id += 1
+
+        for count in range(0, refrigerated):
+            container = RefrigeratedContainer(
+                id=container_id, weight=random.uniform(10.0, 20.0), port_id=port_id, ship_id=-1
+            )
+            db_container = container_crud.get_by_id(container.id)
+            if db_container:
+                print("Container already exists")
+            else:
+                db_container = container_crud.create_container(container=container)
+                print(f"Container created {container}")
+            container_id += 1
+
+        for count in range(0, liquid):
+            container = LiquidContainer(
+                id=container_id, weight=random.uniform(10.0, 20.0), port_id=port_id, ship_id=-1
+            )
+            db_container = container_crud.get_by_id(container.id)
+            if db_container:
+                print("Container already exists")
+            else:
+                db_container = container_crud.create_container(container=container)
+                print(f"Container created {container}")
+            container_id += 1
+
+    print("Port list =", port_crud.get_all_ports())
+    return port_crud.get_all_ports()

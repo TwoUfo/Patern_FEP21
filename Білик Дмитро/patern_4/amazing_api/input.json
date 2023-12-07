@@ -1,0 +1,115 @@
+{
+  "ports": [
+    {
+      "port_id": "1",
+      "title": "Liverpool",
+      "longitude": 21.56,
+      "latitude": 30.51,
+      "ships": [
+        {
+          "ship_id": "1",
+          "port_id": "1",
+          "port_deliver_id": "2",
+          "totalWeightCapacity": 1000,
+          "maxNumberOfAllContainers": 20,
+          "maxNumberOfHeavyContainers": 5,
+          "maxNumberOfRefrigeratedContainers": 2,
+          "maxNumberOfLiquidContainers": 5,
+          "maxNumberOfBasicContainers": 8,
+          "fuelConsumptionPerKM": 20,
+          "ship_type": "MediumShip",
+          "title": "The Beatles",
+          "fuel": 1000
+        }
+      ],
+      "containers": 6,
+      "basic": 1,
+      "heavy": 7,
+      "refrigerated": 5,
+      "liquid": 1,
+      "basic_items": 1,
+      "heavy_items": 7,
+      "refrigerated_items": 5,
+      "liquid_items": 1
+    },
+    {
+      "port_id": "2",
+      "title": "London",
+      "longitude": 10.00,
+      "latitude": 10.00,
+      "ships": [
+        {
+          "ship_id": "2",
+          "port_id": "2",
+          "port_deliver_id": "1",
+          "totalWeightCapacity": 1000,
+          "maxNumberOfAllContainers": 20,
+          "maxNumberOfHeavyContainers": 5,
+          "maxNumberOfRefrigeratedContainers": 2,
+          "maxNumberOfLiquidContainers": 5,
+          "maxNumberOfBasicContainers": 8,
+          "fuelConsumptionPerKM": 20,
+          "ship_type": "HeavyShip",
+          "title": "T.Russwwelt",
+          "fuel": 1000
+        },
+        {
+          "ship_id": "3",
+          "port_id": "2",
+          "port_deliver_id": "1",
+          "totalWeightCapacity": 1200,
+          "maxNumberOfAllContainers": 25,
+          "maxNumberOfHeavyContainers": 6,
+          "maxNumberOfRefrigeratedContainers": 3,
+          "maxNumberOfLiquidContainers": 6,
+          "maxNumberOfBasicContainers": 10,
+          "fuelConsumptionPerKM": 25,
+          "ship_type": "MediumShip",
+          "title": "HMS Britannia",
+          "fuel": 1000
+        }
+      ],
+      "containers": 24,
+      "basic": 11,
+      "heavy": 10,
+      "refrigerated": 6,
+      "liquid": 7,
+      "basic_items": 2,
+      "heavy_items": 9,
+      "refrigerated_items": 8,
+      "liquid_items": 5
+    },
+    {
+      "port_id": "3",
+      "title": "Manchester",
+      "longitude": 15.00,
+      "latitude": 20.00,
+      "ships": [
+        {
+          "ship_id": "4",
+          "port_id": "3",
+          "port_deliver_id": "2",
+          "totalWeightCapacity": 800,
+          "maxNumberOfAllContainers": 15,
+          "maxNumberOfHeavyContainers": 4,
+          "maxNumberOfRefrigeratedContainers": 2,
+          "maxNumberOfLiquidContainers": 4,
+          "maxNumberOfBasicContainers": 6,
+          "fuelConsumptionPerKM": 18,
+          "ship_type": "LightShip",
+          "title": "Swift Voyager",
+          "fuel": 1000
+        }
+      ],
+      "containers": 12,
+      "basic": 4,
+      "heavy": 5,
+      "refrigerated": 3,
+      "liquid": 4,
+      "basic_items": 1,
+      "heavy_items": 3,
+      "refrigerated_items": 2,
+      "liquid_items": 4
+    }
+  ]
+}
