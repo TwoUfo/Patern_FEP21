@@ -1,0 +1,85 @@
+from ship import *
+from port import *
+from containers import *
+from item import *
+import json
+
+def get_data():
+    """Function returns lists with all Objects"""
+    with open('input.json') as file:
+        data = json.load(file)
+
+    ships = []
+    ports = []
+    containers = []
+    items = []
+
+    # Getting all data
+    for port_data in data:
+        # Getting Ports
+        temp_port = Port(port_data['latitude'], port_data['longitude'])
+        ports.append(temp_port)
+
+        # Getting Ships
+        for ship_item in port_data['ships']:
+            config_ship = ConfigShip(
+                ship_item['total_weight_capacity'],
+                ship_item['max_number_of_all_containers'],
+                ship_item['max_number_of_basic_containers'],
+                ship_item['max_number_of_heavy_containers'],
+                ship_item['max_number_of_refrigerated_containers'],
+                ship_item['max_number_of_liquid_containers'],
+                ship_item['fuel_consumption_per_km']
+            )
+            fuel = ship_item['fuel']
+            ship_type = ship_item['ship_type']
+            if ship_type == 'LightWeightShip':
+                ship = LightWeightShip(temp_port, fuel, config_ship)
+            elif ship_type == 'MediumShip':
+                ship = MediumShip(temp_port, fuel, config_ship)
+            elif ship_type == 'HeavyShip':
+                ship = HeavyShip(temp_port, fuel, config_ship)
+            else:
+                print(f'Unknown ship type: {ship_type}')
+                continue
+            temp_port.current_ships.append(ship)
+            ships.append(ship)
+
+        # Getting Containers
+        for con_data in port_data['containers']:
+            weight = con_data['weight']
+            container_type = con_data['container_type']
+            if container_type == 'Basic':
+                container = BasicContainer(weight)
+            elif container_type == 'Heavy':
+                container = HeavyContainer(weight)
+            elif container_type == 'Refrigerated':
+                container = RefrigeratedContainer(weight)
+            elif container_type == 'Liquid':
+                container = LiquidContainer(weight)
+            else:
+                print(f'Unknown container type: {container_type}')
+                continue
+            temp_port.containers.append(container)
+            containers.append(container)
+
+        # Getting Items
+        for item_data in port_data['items']:
+            weight = item_data['weight']
+            count = item_data['count']
+            item_type = item_data['item_type']
+            if item_type == 'Small':
+                itm = SmallItem(weight, count)
+            elif item_type == 'Heavy':
+                itm = HeavyItem(weight, count)
+            elif item_type == 'Refrigerated':
+                itm = RefrigeratedItem(weight, count)
+            elif item_type == 'Liquid':
+                itm = LiquidItem(weight, count)
+            else:
+                print(f'Unknown item type: {item_type}')
+                continue
+            temp_port.items.append(itm)
+            items.append(itm)
+
+    return ships, ports, containers, items
