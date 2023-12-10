@@ -1,0 +1,11 @@
+from dataclasses import dataclass
+
+@dataclass
+class BankInfo:
+    bank_name: str
+    holder_name: str
+    accounts_number: list
+    credit_history: str
+
+    def transaction_list(self, account_number):
+        return ["Transaction 1", "Transaction 2"]

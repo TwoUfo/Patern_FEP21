@@ -1,0 +1,28 @@
+from ship import *
+from port import *
+from containers import *
+from item import *
+from input import *
+
+ships, ports, containers, items = get_data()
+
+ship_0 = ships[0]
+port_0 = ports[0]
+container_0 = containers[0]
+
+print(ship_0.sail_to(ports[1]))
+print(ship_0.sail_to(port_0))
+ship_0.refuel(0)
+print(ship_0.sail_to(port_0))
+
+print('Container to load: ', container_0)
+print('Containers in Port: ', len(port_0.containers))
+print('Containers on ship: ', ship_0.containers, '\n')
+
+print(ship_0.load(container_0))
+print('Containers in Port: ', len(port_0.containers))
+print('Containers on ship: ', ship_0.containers, '\n')
+
+print(ship_0.unload(container_0))
+print('Containers in Port: ', len(port_0.containers))
+print('Containers on ship: ', ship_0.containers, '\n')

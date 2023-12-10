@@ -1,0 +1,68 @@
+from ship import *
+from port import *
+from containers import *
+import json
+
+with open('input.json') as file:
+    дані = json.load(file)
+
+кораблі = []
+порти = []
+контейнери = []
+
+# Отримання всіх даних
+for елемент in дані:
+    тимчасовий_порт = Port(елемент['latitude'], елемент['longitude'])
+    порти.append(тимчасовий_порт)
+    # Отримання кораблів
+    for корабель_елемент in елемент['ships']:
+        корабель = Ship(
+            тимчасовий_порт,
+            ConfigShip(
+                корабель_елемент['total_weight_capacity'],
+                корабель_елемент['max_number_of_all_containers'],
+                корабель_елемент['max_number_of_basic_containers'],
+                корабель_елемент['max_number_of_heavy_containers'],
+                корабель_елемент['max_number_of_refrigerated_containers'],
+                корабель_елемент['max_number_of_liquid_containers'],
+                корабель_елемент['fuel_consumption_per_km']
+            ),
+            корабель_елемент['fuel']
+        )
+        тимчасовий_порт.current_ships.append(корабель)
+        кораблі.append(корабель)
+    # Отримання контейнерів
+    for контейнер_елемент in елемент['containers']:
+        контейнер = None
+        if контейнер_елемент['container_type'] == 'Basic':
+            контейнер = BasicContainer(контейнер_елемент['weight'])
+        elif контейнер_елемент['container_type'] == 'Heavy':
+            контейнер = HeavyContainer(контейнер_елемент['weight'])
+        elif контейнер_елемент['container_type'] == 'Refrigerated':
+            контейнер = RefrigeratedContainer(контейнер_елемент['weight'])
+        elif контейнер_елемент['container_type'] == 'Liquid':
+            контейнер = LiquidContainer(контейнер_елемент['weight'])
+        else:
+            print('!-Ви ввели неправильне значення для типу контейнера-!')
+        тимчасовий_порт.containers.append(контейнер)
+        контейнери.append(контейнер)
+
+кораблі[0].sail_to(порти[1])
+print()
+кораблі[0].sail_to(порти[0])
+кораблі[0].refuel(100000)
+print()
+кораблі[0].sail_to(порти[0])
+print()
+
+print('Контейнер для завантаження: ', контейнери[0])
+print('Контейнери в порті: ', len(порти[0].containers))
+print('Контейнери на кораблі: ', кораблі[0].containers, '\n')
+
+кораблі[0].load(контейнери[0])
+print('Контейнери в порті: ', len(порти[0].containers))
+print('Контейнери на кораблі: ', кораблі[0].containers, '\n')
+
+кораблі[0].unload(контейнери[0])
+print('Контейнери в порті: ', len(порти[0].containers))
+print('Контейнери на кораблі: ', кораблі[0].containers, '\n')

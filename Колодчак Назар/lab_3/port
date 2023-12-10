@@ -1,0 +1,62 @@
+from abc import ABC, abstractmethod
+from uuid import uuid4
+from ship import Ship
+from containers import Container
+from item import Item
+
+import haversine as hs
+
+
+class IPort(ABC):
+    @abstractmethod
+    def incoming_ship(self, ship: Ship) -> str:
+        pass
+
+    @abstractmethod
+    def outgoing_ship(self, ship: Ship) -> str:
+        pass
+
+    @abstractmethod
+    def load_item_to_container(self, item: Item, container: Container) -> str:
+        pass
+
+
+class Port(IPort):
+    def __init__(self, latitude: float, longitude: float) -> None:
+        self.id = uuid4()
+        self.latitude = latitude
+        self.longitude = longitude
+        self.containers = []
+        self.items = []
+        self.ship_history = []
+        self.current_ships = []
+
+    def get_distance(self, port) -> float:
+        dist = hs.haversine((self.latitude, self.longitude), (port.latitude, port.longitude))
+        return dist
+
+    def incoming_ship(self, ship: Ship) -> str:
+        if ship not in self.current_ships:
+            self.current_ships.append(ship)
+            return '<-Ship has arrived at the new Port->'
+        else:
+            return '!-Error-!'
+
+    def outgoing_ship(self, ship: Ship) -> str:
+        if ship in self.current_ships:
+            self.ship_history.append(ship)
+            self.current_ships.remove(ship)
+            return '<-Ship has left the current Port->'
+        else:
+            return '!-Error-!'
+
+    def load_item_to_container(self, item: Item, container: Container) -> str:
+        if container in self.containers and item in self.items:
+            if container.weight + item.get_total_weight() <= container.get_max_weight():
+                container.items.append(item)
+                self.items.remove(item)
+                return '<-This Item has been loaded into the Container->'
+            else:
+                return '<-This Item is too heavy to load into the Container->'
+        else:
+            return '<-Item and Container are in different Ports->'
