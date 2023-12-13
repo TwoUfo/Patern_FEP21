@@ -1,32 +1,53 @@
-from classes.CreditCard import CreditCard
-from classes.BankInfo import BankInfo
+from CreditCard import CreditCard
+from fastapi import FastAPI, HTTPException, Depends
+from sqlalchemy.orm import Session
+from sqlalchemy import create_engine
+from BankCustomer import BankCustomer
+from BankInfo import BankInfoModel
+from models import Base, BankCustomerTable, PersonalInfoTable
 
-from faker import Faker
-import json
+app = FastAPI()
 
-fake = Faker(["uk_UA"])
-
-
-def main():
-    number_of_cards_to_generate = 5
-    credit_cards = [CreditCard(
-                fake.unique.name().split()[0],
-                str(fake.unique.random_int(min=10_000_000_000, max=99_999_999_999)),
-                fake.unique.random_int(min=150_000, max=250_000) + 50 * i,
-                fake.unique.random_int(min=4, max=12),
-                str(fake.unique.random_int(min=100, max=999))) for i in range(number_of_cards_to_generate)]
-
-    with open('credit_cards.json', 'w', encoding='utf-8') as f:
-        json.dump([card.get_details for card in credit_cards], f, indent=4, ensure_ascii=False)
-
-    bank_info = BankInfo("PrivateBank", "Printoholic")
-
-    with open('credit_history.json', 'w', encoding='utf-8') as file:
-        json.dump(bank_info.credit_histories, file, indent=4, ensure_ascii=False)
-
-    with open('transactions.json', 'w', encoding='utf-8') as file:
-        json.dump(bank_info.transactions, file, indent=4, ensure_ascii=False)
+engine = create_engine("sqlite:///lab5.db")
+Base.metadata.create_all(bind=engine)
 
 
-if __name__ == '__main__':
-    main()
+def get_db():
+    db = Session()
+    try:
+        yield db
+    finally:
+        db.close()
+
+
+@app.post("/customers/", response_model=BankInfoModel, status_code=200)
+def add_customer(customer: BankCustomer, db: Session = Depends(get_db)):
+    db.add(customer)
+    db.commit()
+    db.refresh(customer)
+    return {"message": "Customer added successfully!", "customer": customer}
+
+
+@app.post("/credit_cards", status_code=200)
+def add_credit_card(credit_card: CreditCard, db: Session = Depends(get_db)):
+    db.add(credit_card)
+    db.commit()
+    db.refresh(credit_card)
+    return {"message": "Credit card added successfully!", "credit_card_id": credit_card.id}
+
+
+@app.get("/transactions/{account_number}", status_code=200)
+def show_transaction_list(account_number: str, db: Session = Depends(get_db)):
+    def get_account_number_by_personal_info_id(id):
+        return db.query(PersonalInfoTable).filter(PersonalInfoTable.id == id).first()
+
+    customer = db.query(BankCustomerTable).filter(get_account_number_by_personal_info_id(
+        BankCustomerTable.personal_info_id) == account_number).first()
+    if not customer:
+        raise HTTPException(status_code=404, detail="Customer not found")
+
+    transactions = customer.bank_info.transaction_list(account_number)
+    if transactions:
+        return {"transactions": transactions}
+    else:
+        return {"message": "No transactions found for the account number"}
