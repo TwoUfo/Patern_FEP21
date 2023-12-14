@@ -5,8 +5,7 @@ from pydantic import BaseModel
 from sqlalchemy import Enum
 
 from app.schemas.port import Port
-from app.schemas.containers import *
-
+from app.schemas.containers import Container
 
 class IShip(BaseModel, ABC):
     total_weight_capacity: int
@@ -42,55 +41,43 @@ class IShip(BaseModel, ABC):
     class Config:
         from_attributes = True
 
-
-from app.db.repositories.ship_repo import ShipRepository
-from app.db.repositories.port_repo import PortRepository
-from app.services.port_service import PortFactory
-
-
 class LightWeightShip(IShip):
-
     def sail_to(self, port_to_go: Port, db_session) -> None:
         if self.port_id == port_to_go.id:
-            pass
-            # return 'Ship already is in this port'
+            pass  # <-Ship already is in this port->
         else:
-            curr_port = PortFactory.create_port(
-                PortRepository(db_session=db_session).get_by_id(port_id=self.port_id).__dict__)
+            curr_port = PortFactory.create_port(PortRepository(db_session=db_session).get_by_id(port_id=self.port_id).__dict__)
             sailing_fuel_cost = curr_port.get_distance(port_to_go) * self.fuel_consumption_per_km
-            print(sailing_fuel_cost)
+
             for container in self.containers:
                 sailing_fuel_cost += container.consumption()
+
             if sailing_fuel_cost < self.fuel:
                 curr_port.outgoing_ship(self.id)
                 port_to_go.incoming_ship(self.id)
                 self.port_id = port_to_go.id
                 self.fuel -= sailing_fuel_cost
 
-
                 ShipRepository(db_session=db_session).update_ship(self)
                 PortRepository(db_session=db_session).update_port(curr_port)
                 PortRepository(db_session=db_session).update_port(port_to_go)
                 # return '<-Ship starts going to new Port->'
             else:
-                pass
-                # return '<-The Ship does\'nt have enough fuel to sail->'
+                pass  # <-The Ship doesn't have enough fuel to sail->
 
     def refuel(self, amount_of_fuel: float) -> None:
         self.fuel += amount_of_fuel
 
     def load(self, container: Container) -> None:
         if container in self.port.containers:
-            if self.configs.max_number_of_all_containers >= len(self.containers) + 1:
+            if self.max_number_of_all_containers >= len(self.containers) + 1:
                 self.containers.append(container)
                 self.port.containers.remove(container)
                 # return '<-Container is loaded on Ship->'
             else:
-                pass
-                # return '<-Ship is full and can`t load anymore Containers->'
+                pass  # <-Ship is full and can't load any more Containers->
         else:
-            pass
-            # return '<-This Container is in another port->'
+            pass  # <-This Container is in another port->
 
     def unload(self, container: Container) -> None:
         if container in self.containers:
@@ -98,18 +85,15 @@ class LightWeightShip(IShip):
             self.port.containers.append(container)
             # return '<-Container is unloaded from Ship->'
         else:
-            pass
-            # return '<-This Container is Not on this Ship->'
+            pass  # <-This Container is not on this Ship->
 
     def get_current_containers(self) -> list:
         return self.containers
-
 
 class MediumWeightShip(IShip):
     def sail_to(self, port_to_go: Port) -> None:
         if self.port.id == port_to_go.id:
-            pass
-            # return 'Ship already is in this port'
+            pass  # <-Ship already is in this port->
         else:
             curr_port = PortRepository().get_by_id(port_id=self.port_id)
             sailing_fuel_cost = curr_port.get_distance(port_to_go) * self.fuel_consumption_per_km
@@ -131,24 +115,21 @@ class MediumWeightShip(IShip):
                             break
                             # return '<-Ship starts going to new Port->'
             else:
-                pass
-                # return '<-The Ship does\'nt have enough fuel to sail->'
+                pass  # <-The Ship doesn't have enough fuel to sail->
 
     def refuel(self, amount_of_fuel: float) -> None:
         self.fuel += amount_of_fuel
 
     def load(self, container: Container) -> None:
         if container in self.port.containers:
-            if self.configs.max_number_of_all_containers >= len(self.containers) + 1:
+            if self.max_number_of_all_containers >= len(self.containers) + 1:
                 self.containers.append(container)
                 self.port.containers.remove(container)
                 # return '<-Container is loaded on Ship->'
             else:
-                pass
-                # return '<-Ship is full and can`t load anymore Containers->'
+                pass  # <-Ship is full and can't load any more Containers->
         else:
-            pass
-            # return '<-This Container is in another port->'
+            pass  # <-This Container is in another port->
 
     def unload(self, container: Container) -> None:
         if container in self.containers:
@@ -156,18 +137,15 @@ class MediumWeightShip(IShip):
             self.port.containers.append(container)
             # return '<-Container is unloaded from Ship->'
         else:
-            pass
-            # return '<-This Container is Not on this Ship->'
+            pass  # <-This Container is not on this Ship->
 
     def get_current_containers(self) -> list:
         return self.containers
 
-
 class HeavyWeightShip(IShip):
     def sail_to(self, port_to_go: Port) -> None:
         if self.port.id == port_to_go.id:
-            pass
-            # return 'Ship already is in this port'
+            pass  # <-Ship already is in this port->
         else:
             curr_port = PortRepository().get_by_id(port_id=self.port_id)
             sailing_fuel_cost = curr_port.get_distance(port_to_go) * self.fuel_consumption_per_km
@@ -189,24 +167,21 @@ class HeavyWeightShip(IShip):
                             break
                             # return '<-Ship starts going to new Port->'
             else:
-                pass
-                # return '<-The Ship does\'nt have enough fuel to sail->'
+                pass  # <-The Ship doesn't have enough fuel to sail->
 
     def refuel(self, amount_of_fuel: float) -> None:
         self.fuel += amount_of_fuel
 
     def load(self, container: Container) -> None:
         if container in self.port.containers:
-            if self.configs.max_number_of_all_containers >= len(self.containers) + 1:
+            if self.max_number_of_all_containers >= len(self.containers) + 1:
                 self.containers.append(container)
                 self.port.containers.remove(container)
                 # return '<-Container is loaded on Ship->'
             else:
-                pass
-                # return '<-Ship is full and can`t load anymore Containers->'
+                pass  # <-Ship is full and can't load any more Containers->
         else:
-            pass
-            # return '<-This Container is in another port->'
+            pass  # <-This Container is in another port->
 
     def unload(self, container: Container) -> None:
         if container in self.containers:
@@ -214,8 +189,7 @@ class HeavyWeightShip(IShip):
             self.port.containers.append(container)
             # return '<-Container is unloaded from Ship->'
         else:
-            pass
-            # return '<-This Container is Not on this Ship->'
+            pass  # <-This Container is not on this Ship->
 
     def get_current_containers(self) -> list:
         return self.containers
