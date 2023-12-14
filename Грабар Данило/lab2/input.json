@@ -1,0 +1,466 @@
+{
+  "py/object": "port.Port",
+  "id": {
+    "py/object": "uuid.UUID",
+    "hex": "0fef5da7958f49c7af3ed113b0efe792"
+  },
+  "latitude": -18,
+  "longitude": 137,
+  "containers": [
+    {
+      "py/object": "containers.BasicContainer",
+      "id": {
+        "py/object": "uuid.UUID",
+        "hex": "699352da9d02416d860fbe79156c94e5"
+      },
+      "weight": 2823
+    },
+    {
+      "py/object": "containers.HeavyContainer",
+      "id": {
+        "py/object": "uuid.UUID",
+        "hex": "9298e83088654e8ca767d38759bc2649"
+      },
+      "weight": 4375
+    },
+    {
+      "py/object": "containers.RefrigeratedContainer",
+      "id": {
+        "py/object": "uuid.UUID",
+        "hex": "802c39337eb747b9a6018374a2f40f0e"
+      },
+      "weight": 4379
+    },
+    {
+      "py/object": "containers.LiquidContainer",
+      "id": {
+        "py/object": "uuid.UUID",
+        "hex": "bda97bdd33a7467880a37d1c97b74d8f"
+      },
+      "weight": 4792
+    }
+  ],
+  "ship_history": [],
+  "current_ships": [
+    {
+      "py/object": "ship.Ship",
+      "id": {
+        "py/object": "uuid.UUID",
+        "hex": "e0486d69a7144196b5741d3ae506b992"
+      },
+      "fuel": 100,
+      "port": "3af6bdbd-d466-4d73-8bf5-84a58ebab983",
+      "configs": {
+        "py/object": "ship.ConfigShip",
+        "totalWeightCapacity": 1062,
+        "maxNumberOfAllContainers": 23,
+        "maxNumberOfHeavyContainers": 3,
+        "maxNumberOfRefrigeratedContainers": 5,
+        "maxNumberOfLiquidContainers": 5,
+        "fuelConsumptionPerKM": 5
+      },
+      "containers": [
+        {
+          "py/object": "containers.HeavyContainer",
+          "id": {
+            "py/object": "uuid.UUID",
+            "hex": "232df61bc417409fa03b467f97dc6132"
+          },
+          "weight": 3419
+        },
+        {
+          "py/object": "containers.RefrigeratedContainer",
+          "id": {
+            "py/object": "uuid.UUID",
+            "hex": "df941f07c9bc436e9c68b4ab1cc7d1e9"
+          },
+          "weight": 4553
+        },
+        {
+          "py/object": "containers.RefrigeratedContainer",
+          "id": {
+            "py/object": "uuid.UUID",
+            "hex": "6498091dc8fb48deae4339aa8d6da11e"
+          },
+          "weight": 5938
+        },
+        {
+          "py/object": "containers.RefrigeratedContainer",
+          "id": {
+            "py/object": "uuid.UUID",
+            "hex": "db0f9bbc122a48d2afb934267380b5c7"
+          },
+          "weight": 5346
+        },
+        {
+          "py/object": "containers.RefrigeratedContainer",
+          "id": {
+            "py/object": "uuid.UUID",
+            "hex": "a28bca58e84040feba1db1c32e8e9a3a"
+          },
+          "weight": 5104
+        },
+        {
+          "py/object": "containers.RefrigeratedContainer",
+          "id": {
+            "py/object": "uuid.UUID",
+            "hex": "d1a86e9c122b43b88846961e063060b1"
+          },
+          "weight": 5558
+        },
+        {
+          "py/object": "containers.RefrigeratedContainer",
+          "id": {
+            "py/object": "uuid.UUID",
+            "hex": "23b1f64ae9594b7cb01d5e8335b0329e"
+          },
+          "weight": 5751
+        },
+        {
+          "py/id": 17
+        },
+        {
+          "py/id": 19
+        },
+        {
+          "py/id": 21
+        },
+        {
+          "py/id": 23
+        },
+        {
+          "py/id": 25
+        },
+        {
+          "py/id": 27
+        },
+        {
+          "py/id": 29
+        },
+        {
+          "py/id": 17
+        },
+        {
+          "py/id": 19
+        },
+        {
+          "py/id": 21
+        },
+        {
+          "py/id": 23
+        },
+        {
+          "py/id": 25
+        },
+        {
+          "py/id": 27
+        },
+        {
+          "py/id": 29
+        },
+        {
+          "py/id": 17
+        },
+        {
+          "py/id": 19
+        }
+      ]
+    },
+    {
+      "py/object": "ship.Ship",
+      "id": {
+        "py/object": "uuid.UUID",
+        "hex": "bfcb9fa0249b40ed84d250ebd47788ab"
+      },
+      "fuel": 100,
+      "port": "527eb2a5-f3d3-4cfe-a225-fb4e10510177",
+      "configs": {
+        "py/object": "ship.ConfigShip",
+        "totalWeightCapacity": 916,
+        "maxNumberOfAllContainers": 18,
+        "maxNumberOfHeavyContainers": 3,
+        "maxNumberOfRefrigeratedContainers": 5,
+        "maxNumberOfLiquidContainers": 5,
+        "fuelConsumptionPerKM": 5
+      },
+      "containers": [
+        {
+          "py/id": 17
+        },
+        {
+          "py/id": 19
+        },
+        {
+          "py/id": 21
+        },
+        {
+          "py/id": 23
+        },
+        {
+          "py/id": 25
+        },
+        {
+          "py/id": 27
+        },
+        {
+          "py/id": 29
+        },
+        {
+          "py/id": 17
+        },
+        {
+          "py/id": 19
+        },
+        {
+          "py/id": 21
+        },
+        {
+          "py/id": 23
+        },
+        {
+          "py/id": 25
+        },
+        {
+          "py/id": 27
+        },
+        {
+          "py/id": 29
+        },
+        {
+          "py/id": 17
+        },
+        {
+          "py/id": 19
+        },
+        {
+          "py/id": 21
+        },
+        {
+          "py/id": 23
+        }
+      ]
+    },
+    {
+      "py/object": "ship.Ship",
+      "id": {
+        "py/object": "uuid.UUID",
+        "hex": "65092e7c762a4b17aa83cccc5287ff2e"
+      },
+      "fuel": 100,
+      "port": "527eb2a5-f3d3-4cfe-a225-fb4e10510177",
+      "configs": {
+        "py/object": "ship.ConfigShip",
+        "totalWeightCapacity": 1441,
+        "maxNumberOfAllContainers": 30,
+        "maxNumberOfHeavyContainers": 3,
+        "maxNumberOfRefrigeratedContainers": 5,
+        "maxNumberOfLiquidContainers": 5,
+        "fuelConsumptionPerKM": 5
+      },
+      "containers": [
+        {
+          "py/id": 17
+        },
+        {
+          "py/id": 19
+        },
+        {
+          "py/id": 21
+        },
+        {
+          "py/id": 23
+        },
+        {
+          "py/id": 25
+        },
+        {
+          "py/id": 27
+        },
+        {
+          "py/id": 29
+        },
+        {
+          "py/id": 17
+        },
+        {
+          "py/id": 19
+        },
+        {
+          "py/id": 21
+        },
+        {
+          "py/id": 23
+        },
+        {
+          "py/id": 25
+        },
+        {
+          "py/id": 27
+        },
+        {
+          "py/id": 29
+        },
+        {
+          "py/id": 17
+        },
+        {
+          "py/id": 19
+        },
+        {
+          "py/id": 21
+        },
+        {
+          "py/id": 23
+        },
+        {
+          "py/id": 25
+        },
+        {
+          "py/id": 27
+        },
+        {
+          "py/id": 29
+        },
+        {
+          "py/id": 17
+        },
+        {
+          "py/id": 19
+        },
+        {
+          "py/id": 21
+        },
+        {
+          "py/id": 23
+        },
+        {
+          "py/id": 25
+        },
+        {
+          "py/id": 27
+        },
+        {
+          "py/id": 29
+        },
+        {
+          "py/id": 17
+        },
+        {
+          "py/id": 19
+        }
+      ]
+    },
+    {
+      "py/object": "ship.Ship",
+      "id": {
+        "py/object": "uuid.UUID",
+        "hex": "fb4ef9f89af7422097c006a42b766b62"
+      },
+      "fuel": 100,
+      "port": "f61eeb26-6798-497b-8c34-a2d2a617c2de",
+      "configs": {
+        "py/object": "ship.ConfigShip",
+        "totalWeightCapacity": 807,
+        "maxNumberOfAllContainers": 17,
+        "maxNumberOfHeavyContainers": 3,
+        "maxNumberOfRefrigeratedContainers": 5,
+        "maxNumberOfLiquidContainers": 5,
+        "fuelConsumptionPerKM": 5
+      },
+      "containers": [
+        {
+          "py/id": 17
+        },
+        {
+          "py/id": 19
+        },
+        {
+          "py/id": 21
+        },
+        {
+          "py/id": 23
+        },
+        {
+          "py/id": 25
+        },
+        {
+          "py/id": 27
+        },
+        {
+          "py/id": 29
+        },
+        {
+          "py/id": 17
+        },
+        {
+          "py/id": 19
+        },
+        {
+          "py/id": 21
+        },
+        {
+          "py/id": 23
+        },
+        {
+          "py/id": 25
+        },
+        {
+          "py/id": 27
+        },
+        {
+          "py/id": 29
+        },
+        {
+          "py/id": 17
+        },
+        {
+          "py/id": 19
+        },
+        {
+          "py/id": 21
+        }
+      ]
+    },
+    {
+      "py/object": "ship.Ship",
+      "id": {
+        "py/object": "uuid.UUID",
+        "hex": "c9ba00aca2554a6e9f1331e3e5d8b7d3"
+      },
+      "fuel": 100,
+      "port": "f61eeb26-6798-497b-8c34-a2d2a617c2de",
+      "configs": {
+        "py/object": "ship.ConfigShip",
+        "totalWeightCapacity": 1542,
+        "maxNumberOfAllContainers": 7,
+        "maxNumberOfHeavyContainers": 3,
+        "maxNumberOfRefrigeratedContainers": 5,
+        "maxNumberOfLiquidContainers": 5,
+        "fuelConsumptionPerKM": 5
+      },
+      "containers": [
+        {
+          "py/id": 17
+        },
+        {
+          "py/id": 19
+        },
+        {
+          "py/id": 21
+        },
+        {
+          "py/id": 23
+        },
+        {
+          "py/id": 25
+        },
+        {
+          "py/id": 27
+        },
+        {
+          "py/id": 29
+        }
+      ]
+    }
+  ]
+}
