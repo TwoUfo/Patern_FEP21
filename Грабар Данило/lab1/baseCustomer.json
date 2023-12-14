@@ -1,0 +1,81 @@
+{
+  "items": [
+    {
+      "id": 0,
+      "name": "Tom",
+      "surname": "Jackson",
+      "age": 23,
+      "bill" : {
+        "limit": 100,
+        "currDebt": 0
+      },
+      "operator_id" : 2
+    },
+    {
+      "id": 1,
+      "name": "Billy",
+      "surname": "Hollweys",
+      "age": 16,
+      "bill": {
+        "limit": 100,
+        "currDebt": 0
+      },
+      "operator_id" : 3
+    },
+    {
+      "id": 2,
+      "name": "John",
+      "surname": "Mayers",
+      "age": 30,
+      "bill": {
+        "limit": 110,
+        "currDebt": 0
+      },
+      "operator_id" : 0
+    },
+    {
+      "id": 3,
+      "name": "Paulo",
+      "surname": "Handerson",
+      "age": 21,
+      "bill": {
+        "limit": 50,
+        "currDebt": 0
+      },
+      "operator_id" : 6
+    },
+    {
+      "id": 4,
+      "name": "Hewy",
+      "surname": "Gludo",
+      "age": 84,
+      "bill": {
+        "limit": 80,
+        "currDebt": 0
+      },
+      "operator_id" : 4
+    },
+    {
+      "id": 5,
+      "name": "John",
+      "surname": "Smit",
+      "age": 25,
+      "bill": {
+        "limit": 100,
+        "currDebt": 0
+      },
+      "operator_id" : 2
+    },
+    {
+      "id": 6,
+      "name": "Sviatoslav",
+      "surname": "Soprun",
+      "age": 18,
+      "bill": {
+        "limit": 1000000,
+        "currDebt": -100
+      },
+      "operator_id" : 1
+    }
+  ]
+}
